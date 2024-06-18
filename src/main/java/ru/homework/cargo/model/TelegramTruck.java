@@ -54,15 +54,16 @@ public class TelegramTruck {
                                     .allMatch(c -> truck[c][j] == INITIALISED_VARIABLE);
                 })
                 .findFirst()
-                .map(pos -> createCargoStartPosition(pos[0], pos[1], false))
-                .orElseGet(() -> createCargoStartPosition(0, 0, true));
+                .map(pos -> createCargoStartPosition(parcel, pos[0], pos[1], false))
+                .orElseGet(() -> createCargoStartPosition(parcel,0, 0, true));
     }
 
-    private CargoStartPositionDto createCargoStartPosition(int height, int width, boolean fullTruck) {
+    private CargoStartPositionDto createCargoStartPosition(char[][] parcel, int height, int width, boolean fullTruck) {
         return CargoStartPositionDto.builder()
                 .height(height)
                 .width(width)
                 .fullTruck(fullTruck)
+                .parcel(parcel)
                 .build();
     }
 }
