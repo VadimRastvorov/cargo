@@ -1,0 +1,70 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.0'
+	id 'io.spring.dependency-management' version '1.1.5'
+}
+
+group = 'vadim.rastvotov'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.flywaydb:flyway-database-postgresql'
+	//implementation 'org.springframework.shell:spring-shell-starter'
+	implementation 'org.telegram:telegrambots:6.5.0'
+	implementation 'javax.xml.bind:jaxb-api:2.3.0'
+	implementation 'com.google.code.gson:gson:2.11.0'
+	implementation 'ch.qos.logback:logback-core:1.5.6'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+configurations.configureEach {exclude group: 'commons-logging', module: 'commons-logging'}
+
+/*
+def management = dependencyManagement {
+	imports {
+		mavenBom 'org.springframework.shell:spring-shell-dependencies:3.2.3'
+	}
+}
+management
+
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+ */
+tasks.withType(JavaCompile).configureEach {
+	options.encoding = 'UTF-8'
+}
+final def type = tasks.withType(Test).tap {
+	configureEach {
+		jvmArgs '-Dfile.encoding=UTF-8'
+	}
+}
+type

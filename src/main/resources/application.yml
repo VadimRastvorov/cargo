@@ -1,0 +1,19 @@
+server:
+  port: "8087"
+
+spring:
+  datasource:
+    driver-class-name: "org.postgresql.Driver"
+    url: "jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:cargodb}"
+    username: "${DB_LOGIN:cargouser}"
+    password: "${DB_PASSWORD:cargo}"
+  jpa:
+    open-in-view: false
+bot:
+  name: ${BOT_NAME:HomeWorkCargoTruckBot}
+  token: ${BOT_TOKEN:6350137460:AAHyRmC6wCc3MdY_sSjVIJRvSLZV6heVbCo}
+
+file:
+  directory:
+    json: json
+    resources: packages

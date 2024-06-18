@@ -1,0 +1,1315 @@
+13:18:33.098 1011 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+13:18:33.174 1087 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 3356 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+13:18:33.175 1088 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+13:18:34.292 2205 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:18:34.561 2474 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 250 ms. Found 3 JPA repository interfaces.
+13:18:35.706 3619 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+13:18:35.721 3634 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+13:18:35.725 3638 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:18:35.725 3638 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+13:18:35.857 3770 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:18:35.858 3771 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2627 ms
+13:18:36.284 4197 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:18:36.480 4393 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a45afd4
+13:18:36.483 4396 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:18:36.530 4443 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+13:18:36.647 4560 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.072s)
+13:18:36.683 4596 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+13:18:36.687 4600 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+13:18:36.855 4768 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:18:36.936 4849 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+13:18:37.002 4915 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13:18:37.459 5372 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:18:38.444 6357 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:18:38.450 6363 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:18:39.831 7744 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+13:18:40.256 8169 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+13:18:40.285 8198 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+13:18:41.222 9135 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 8.692 seconds (process running for 9.421)
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+13:19:34.647 952  [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+13:19:34.728 1033 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 25772 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+13:19:34.729 1034 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+13:19:35.908 2213 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:19:36.128 2433 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 203 ms. Found 3 JPA repository interfaces.
+13:19:37.190 3495 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+13:19:37.203 3508 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+13:19:37.206 3511 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:19:37.206 3511 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+13:19:37.326 3631 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:19:37.327 3632 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2551 ms
+13:19:37.760 4065 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:19:38.045 4350 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a45afd4
+13:19:38.047 4352 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:19:38.095 4400 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+13:19:38.199 4504 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.066s)
+13:19:38.235 4540 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+13:19:38.240 4545 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+13:19:38.409 4714 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:19:38.487 4792 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+13:19:38.553 4858 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13:19:39.063 5368 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:19:40.126 6431 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:19:40.131 6436 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:19:41.937 8242 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+13:19:42.259 8564 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+13:19:42.281 8586 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+13:19:42.935 9240 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 8.742 seconds (process running for 9.51)
+13:19:47.965 14270 [http-nio-8087-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:19:47.966 14271 [http-nio-8087-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:19:47.968 14273 [http-nio-8087-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:19:48.007 14312 [http-nio-8087-exec-2] INFO  v.r.c.controller.CargoController - вызов метода findAllTruck
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+13:21:01.042 1001 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+13:21:01.116 1075 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 31208 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+13:21:01.117 1076 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+13:21:02.255 2214 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:21:02.517 2476 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 241 ms. Found 3 JPA repository interfaces.
+13:21:03.657 3616 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+13:21:03.666 3625 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+13:21:03.668 3627 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:21:03.668 3627 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+13:21:03.784 3743 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:21:03.784 3743 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2613 ms
+13:21:04.251 4210 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:21:04.523 4482 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66d3b881
+13:21:04.526 4485 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:21:04.579 4538 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+13:21:04.697 4656 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.085s)
+13:21:04.733 4692 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+13:21:04.740 4699 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+13:21:04.924 4883 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:21:05.027 4986 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+13:21:05.077 5036 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13:21:05.573 5532 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:21:06.797 6756 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:21:06.801 6760 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:21:08.357 8316 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+13:21:08.954 8913 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+13:21:08.996 8955 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+13:21:09.638 9597 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 9.102 seconds (process running for 9.886)
+13:21:13.947 13906 [http-nio-8087-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:21:13.947 13906 [http-nio-8087-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:21:13.948 13907 [http-nio-8087-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+13:21:14.010 13969 [http-nio-8087-exec-2] INFO  v.r.c.controller.CargoController - вызов метода findAllTruck
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+17:27:47.938 369  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[null]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+17:30:49.350 285  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+17:33:02.429 329  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@295eaa7c]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+17:33:26.483 344  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@3918c187]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+17:36:19.218 326  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@3918c187]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+17:36:51.381 300  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@3918c187]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+18:15:46.746 327  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@3918c187]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:03:21.105 426  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@3918c187]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:12:55.698 428  [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@3918c187]]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:23:15.111 476  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.json.ru.homework.cargoSizeDto.JsonServiceTest]: JsonServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:23:15.374 739  [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.homework.cargoSizeDto.CargoApplication for test class service.json.ru.homework.cargoSizeDto.JsonServiceTest
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:23:16.057 1422 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+21:23:16.127 1492 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - Starting JsonServiceTest using Java 17.0.11 with PID 13476 (started by Admin in C:\java_projects\cargoSizeDto)
+21:23:16.129 1494 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - No active profile set, falling back to 1 default profile: "default"
+21:23:17.606 2971 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:23:17.902 3267 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 285 ms. Found 3 JPA repository interfaces.
+21:23:19.399 4764 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:23:19.822 5187 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@296676c4
+21:23:19.832 5197 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:23:19.920 5285 [Test worker] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+21:23:20.131 5496 [Test worker] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.093s)
+21:23:20.170 5535 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+21:23:20.180 5545 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+21:23:20.451 5816 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:23:20.638 6003 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+21:23:20.703 6068 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21:23:21.242 6607 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21:23:22.603 7968 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21:23:22.608 7973 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:23:24.954 10319 [Test worker] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+21:23:26.396 11761 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - Started JsonServiceTest in 10.777 seconds (process running for 13.299)
+21:23:27.373 12738 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:23:27.377 12742 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:23:27.390 12755 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:23:51.063 611  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.json.ru.homework.cargoSizeDto.JsonServiceTest]: JsonServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:23:51.234 782  [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.homework.cargoSizeDto.CargoApplication for test class service.json.ru.homework.cargoSizeDto.JsonServiceTest
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:23:51.760 1308 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+21:23:51.796 1344 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - Starting JsonServiceTest using Java 17.0.11 with PID 12680 (started by Admin in C:\java_projects\cargoSizeDto)
+21:23:51.797 1345 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - No active profile set, falling back to 1 default profile: "default"
+21:23:53.399 2947 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:23:53.752 3300 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 337 ms. Found 3 JPA repository interfaces.
+21:23:55.249 4797 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:23:55.670 5218 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37e55819
+21:23:55.674 5222 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:23:55.743 5291 [Test worker] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+21:23:55.910 5458 [Test worker] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.104s)
+21:23:55.942 5490 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+21:23:55.948 5496 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+21:23:56.221 5769 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:23:56.350 5898 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+21:23:56.413 5961 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21:23:56.891 6439 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21:23:58.093 7641 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21:23:58.097 7645 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:24:00.377 9925 [Test worker] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+21:24:01.586 11134 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - Started JsonServiceTest in 10.181 seconds (process running for 12.502)
+21:24:02.423 11971 [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@1927c2c6]]'
+21:24:02.520 12068 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:24:02.528 12076 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:24:02.538 12086 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:26:14.563 524  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.json.ru.homework.cargoSizeDto.JsonServiceTest]: JsonServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:26:14.732 693  [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.homework.cargoSizeDto.CargoApplication for test class service.json.ru.homework.cargoSizeDto.JsonServiceTest
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:26:15.266 1227 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+21:26:15.316 1277 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - Starting JsonServiceTest using Java 17.0.11 with PID 20696 (started by Admin in C:\java_projects\cargoSizeDto)
+21:26:15.318 1279 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - No active profile set, falling back to 1 default profile: "default"
+21:26:16.652 2613 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:26:16.874 2835 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 207 ms. Found 3 JPA repository interfaces.
+21:26:18.065 4026 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:26:18.324 4285 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45c90a05
+21:26:18.328 4289 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:26:18.375 4336 [Test worker] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+21:26:18.487 4448 [Test worker] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.067s)
+21:26:18.526 4487 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+21:26:18.533 4494 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+21:26:18.713 4674 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:26:18.875 4836 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+21:26:18.986 4947 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21:26:19.743 5704 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21:26:21.280 7241 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21:26:21.288 7249 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:26:23.700 9661 [Test worker] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+21:26:24.910 10871 [Test worker] INFO  v.r.c.json.service.JsonServiceTest - Started JsonServiceTest in 9.998 seconds (process running for 12.466)
+21:26:25.677 11638 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: 'test'
+21:26:25.920 11881 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: 'prid'
+21:26:26.014 11975 [Test worker] INFO  v.r.cargoSizeDto.json.service.JsonService - запуск метода Serialization с truckV2s: '[[dto.ru.homework.cargoSizeDto.Cargo@320bfc61]]'
+21:26:26.058 12019 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:26:26.062 12023 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:26:26.072 12033 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:26:32.027 1468 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+21:26:32.103 1544 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 25084 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+21:26:32.105 1546 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+21:26:33.706 3147 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:26:34.004 3445 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 281 ms. Found 3 JPA repository interfaces.
+21:26:35.689 5130 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+21:26:35.702 5143 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+21:26:35.705 5146 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:26:35.705 5146 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+21:26:35.834 5275 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:26:35.834 5275 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3642 ms
+21:26:36.462 5903 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:26:36.802 6243 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@394fb736
+21:26:36.805 6246 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:26:36.885 6326 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+21:26:37.021 6462 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.091s)
+21:26:37.051 6492 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+21:26:37.055 6496 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+21:26:37.305 6746 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:26:37.414 6855 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+21:26:37.488 6929 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21:26:38.341 7782 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21:26:41.555 10996 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21:26:41.569 11010 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:26:45.383 14824 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+21:26:46.159 15600 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+21:26:46.224 15665 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+21:26:47.513 16954 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 16.217 seconds (process running for 17.241)
+21:26:48.396 17837 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: 'load'
+21:26:48.408 17849 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+21:26:48.433 17874 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+21:26:48.436 17877 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+21:26:48.437 17878 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+21:26:48.438 17879 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+21:26:48.439 17880 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+21:26:48.441 17882 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+21:26:48.442 17883 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+21:26:48.443 17884 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+21:26:48.445 17886 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+21:26:48.448 17889 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+21:26:48.449 17890 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+21:26:48.449 17890 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+21:26:48.450 17891 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+21:26:48.451 17892 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+21:26:48.452 17893 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+21:26:48.453 17894 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+21:26:48.454 17895 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+21:26:48.455 17896 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+21:26:48.458 17899 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+21:26:48.459 17900 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+21:26:48.461 17902 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+21:26:48.462 17903 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+21:26:48.463 17904 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+21:26:48.463 17904 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+21:26:48.464 17905 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+21:26:48.465 17906 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+21:26:48.465 17906 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+21:26:48.466 17907 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+21:26:48.467 17908 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+21:26:48.468 17909 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+21:26:48.468 17909 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+21:26:48.469 17910 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+21:26:48.469 17910 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:26:48.470 17911 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+21:26:48.471 17912 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:26:48.472 17913 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+21:26:48.474 17915 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:26:48.475 17916 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+21:26:48.476 17917 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:26:48.477 17918 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+21:26:48.479 17920 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+21:49:01.613 1513 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+21:49:01.721 1621 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 12836 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+21:49:01.723 1623 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+21:49:03.297 3197 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:49:03.642 3542 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 319 ms. Found 3 JPA repository interfaces.
+21:49:05.202 5102 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+21:49:05.228 5128 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+21:49:05.232 5132 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:49:05.232 5132 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+21:49:05.377 5277 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:49:05.378 5278 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3558 ms
+21:49:05.833 5733 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:49:06.166 6066 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3070f3e6
+21:49:06.169 6069 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:49:06.239 6139 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+21:49:06.420 6320 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.110s)
+21:49:06.454 6354 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+21:49:06.464 6364 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+21:49:06.658 6558 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:49:06.757 6657 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+21:49:06.844 6744 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21:49:07.542 7442 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21:49:08.948 8848 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21:49:08.951 8851 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:49:10.870 10770 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+21:49:11.208 11108 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+21:49:11.256 11156 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+21:49:12.011 11911 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 11.113 seconds (process running for 13.267)
+21:49:22.355 22255 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+21:49:22.366 22266 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+21:49:22.377 22277 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+21:49:22.381 22281 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+21:49:22.382 22282 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+21:49:22.383 22283 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+21:49:22.384 22284 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+21:49:22.385 22285 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+21:49:22.386 22286 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+21:49:22.387 22287 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+21:49:22.389 22289 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+21:49:22.392 22292 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+21:49:22.393 22293 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+21:49:22.394 22294 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+21:49:22.395 22295 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+21:49:22.396 22296 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+21:49:22.396 22296 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+21:49:22.397 22297 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+21:49:22.397 22297 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+21:49:22.398 22298 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+21:49:22.399 22299 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+21:49:22.399 22299 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+21:49:22.400 22300 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+21:49:22.401 22301 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+21:49:22.401 22301 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+21:49:22.402 22302 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+21:49:22.403 22303 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+21:49:22.403 22303 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+21:49:22.404 22304 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+21:49:22.404 22304 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+21:49:22.405 22305 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+21:49:22.405 22305 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+21:49:22.406 22306 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+21:49:22.406 22306 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+21:49:22.407 22307 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:49:22.408 22308 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+21:49:22.409 22309 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:49:22.409 22309 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+21:49:22.410 22310 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:49:22.410 22310 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+21:49:22.411 22311 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+21:49:22.413 22313 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+21:49:22.414 22314 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+21:49:29.844 29744 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: 'start'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:11:33.993 1411 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:11:34.086 1504 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 21736 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:11:34.087 1505 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:11:35.620 3038 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:11:35.927 3345 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 280 ms. Found 3 JPA repository interfaces.
+22:11:37.550 4968 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:11:37.581 4999 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:11:37.585 5003 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:11:37.585 5003 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:11:37.697 5115 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:11:37.697 5115 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3528 ms
+22:11:38.107 5525 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:11:38.402 5820 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21516c88
+22:11:38.404 5822 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:11:38.502 5920 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:11:38.652 6070 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.080s)
+22:11:38.688 6106 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:11:38.693 6111 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:11:38.958 6376 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:11:39.108 6526 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:11:39.211 6629 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:11:39.966 7384 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:11:41.406 8824 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:11:41.409 8827 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:11:42.409 9827 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageConfig': Injection of autowired dependencies failed
+22:11:42.410 9828 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:11:42.413 9831 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:11:42.422 9840 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:11:42.425 9843 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+22:11:42.454 9872 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+22:11:42.480 9898 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at ru.homework.cargoSizeDto.CargoApplication.main(CargoApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'package.file.name' in value "${package.file.name}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 17 common frames omitted
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:14:55.817 1324 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:14:55.897 1404 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 10764 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:14:55.898 1405 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:14:57.502 3009 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:14:57.864 3371 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 344 ms. Found 3 JPA repository interfaces.
+22:14:59.458 4965 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:14:59.483 4990 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:14:59.486 4993 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:14:59.486 4993 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:14:59.632 5139 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:14:59.632 5139 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3645 ms
+22:15:00.030 5537 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:15:00.254 5761 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64440065
+22:15:00.256 5763 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:15:00.306 5813 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:15:00.397 5904 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.052s)
+22:15:00.434 5941 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:15:00.439 5946 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:15:00.606 6113 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:15:00.728 6235 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:15:00.802 6309 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:15:01.414 6921 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:15:02.745 8252 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:15:02.752 8259 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:15:04.812 10319 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:15:05.209 10716 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:15:05.250 10757 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:15:06.030 11537 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 10.839 seconds (process running for 11.899)
+22:15:11.282 16789 [main] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+22:15:11.286 16793 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:15:11.294 16801 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:15:11.294 16801 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:15:11.294 16801 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:15:11.294 16801 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:15:11.294 16801 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:15:11.294 16801 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:15:11.295 16802 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+22:15:11.295 16802 [main] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+22:15:11.296 16803 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:15:11.297 16804 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:15:11.297 16804 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+22:15:11.297 16804 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:15:11.297 16804 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+22:15:11.298 16805 [main] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:15:11.298 16805 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+22:15:11.299 16806 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:15:11.300 16807 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+22:15:11.300 16807 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:15:11.300 16807 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+22:15:11.300 16807 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:15:11.300 16807 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+22:15:11.300 16807 [main] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:24:48.180 925  [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:24:48.253 998  [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 22516 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:24:48.254 999  [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:24:49.466 2211 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:24:49.746 2491 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 254 ms. Found 3 JPA repository interfaces.
+22:24:50.933 3678 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:24:50.945 3690 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:24:50.949 3694 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:24:50.949 3694 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:24:51.055 3800 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:24:51.056 3801 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2733 ms
+22:24:51.507 4252 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:24:51.789 4534 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52d7ab79
+22:24:51.792 4537 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:24:51.846 4591 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:24:51.960 4705 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.073s)
+22:24:51.992 4737 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:24:52.000 4745 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:24:52.187 4932 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:24:52.317 5062 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:24:52.381 5126 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:24:52.909 5654 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:24:54.113 6858 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:24:54.118 6863 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:24:55.657 8402 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:24:55.996 8741 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:24:56.021 8766 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:24:56.658 9403 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 8.953 seconds (process running for 9.731)
+22:25:09.881 22626 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+22:25:09.890 22635 [HomeWorkCargoTruckBot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "config.telegram.ru.homework.cargoSizeDto.MessageConfig.getPackageFileName()" because "this.messageConfig" is null
+java.lang.NullPointerException: Cannot invoke "config.telegram.ru.homework.cargoSizeDto.MessageConfig.getPackageFileName()" because "this.messageConfig" is null
+	at service.telegram.ru.homework.cargoSizeDto.TelegramMessageService.telegramPrint(TelegramMessageService.java:31)
+	at telegram.ru.homework.cargoSizeDto.TelegramBot.onUpdateReceived(TelegramBot.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312)
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:26:52.241 1151 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:26:52.342 1252 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 3424 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:26:52.345 1255 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:26:53.690 2600 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:26:54.025 2935 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 304 ms. Found 3 JPA repository interfaces.
+22:26:55.367 4277 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:26:55.385 4295 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:26:55.388 4298 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:26:55.388 4298 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:26:55.516 4426 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:26:55.517 4427 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3096 ms
+22:26:56.011 4921 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:26:56.308 5218 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f7e52d1
+22:26:56.320 5230 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:26:56.382 5292 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:26:56.490 5400 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.066s)
+22:26:56.521 5431 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:26:56.527 5437 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:26:56.691 5601 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:26:56.809 5719 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:26:56.887 5797 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:26:57.503 6413 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:26:58.980 7890 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:26:58.985 7895 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:00.692 9602 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:27:01.101 10011 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:27:01.129 10039 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:27:01.833 10743 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 10.144 seconds (process running for 11.27)
+22:27:08.688 17598 [main] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+22:27:08.694 17604 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:27:08.696 17606 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:27:08.697 17607 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:27:08.697 17607 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:27:08.697 17607 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:27:08.698 17608 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:27:08.698 17608 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:27:08.698 17608 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+22:27:08.700 17610 [main] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+22:27:08.701 17611 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:27:08.701 17611 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:27:08.702 17612 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+22:27:08.702 17612 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:27:08.702 17612 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+22:27:08.702 17612 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+22:27:08.702 17612 [main] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+22:27:08.702 17612 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+22:27:08.703 17613 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:27:08.704 17614 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:27:08.704 17614 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:27:08.704 17614 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:27:08.704 17614 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:27:08.704 17614 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:27:08.705 17615 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:27:08.705 17615 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:27:08.705 17615 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+22:27:08.705 17615 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:27:08.705 17615 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:27:08.706 17616 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:27:08.706 17616 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:27:08.706 17616 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:27:08.706 17616 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+22:27:08.706 17616 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:27:08.707 17617 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+22:27:08.707 17617 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:27:08.707 17617 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+22:27:08.707 17617 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:27:08.707 17617 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+22:27:08.707 17617 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:27:08.708 17618 [main] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+22:27:08.708 17618 [main] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+22:27:51.175 60085 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:28:16.636 1161 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:28:16.737 1262 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 15408 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:28:16.739 1264 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:28:18.182 2707 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:18.511 3036 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 304 ms. Found 3 JPA repository interfaces.
+22:28:19.768 4293 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:28:19.779 4304 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:28:19.782 4307 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:28:19.782 4307 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:28:19.929 4454 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:28:19.930 4455 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3120 ms
+22:28:20.395 4920 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:28:20.699 5224 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7604198a
+22:28:20.703 5228 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:28:20.765 5290 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:28:20.891 5416 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.086s)
+22:28:20.925 5450 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:28:20.933 5458 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:28:21.103 5628 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:21.225 5750 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:28:21.302 5827 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:21.851 6376 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:23.342 7867 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:23.347 7872 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:25.001 9526 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:28:25.363 9888 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:28:25.422 9947 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:28:26.117 10642 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 10.071 seconds (process running for 10.98)
+22:28:46.997 31522 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:30:11.110 992  [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:30:11.201 1083 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 14064 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:30:11.203 1085 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:30:12.565 2447 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:30:12.811 2693 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 227 ms. Found 3 JPA repository interfaces.
+22:30:13.960 3842 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:30:13.973 3855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:30:13.976 3858 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:30:13.976 3858 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:30:14.088 3970 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:30:14.088 3970 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2822 ms
+22:30:14.539 4421 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:30:14.855 4737 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c99c8d
+22:30:14.856 4738 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:30:14.908 4790 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:30:15.010 4892 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.062s)
+22:30:15.047 4929 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:30:15.053 4935 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:30:15.236 5118 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:30:15.332 5214 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:30:15.403 5285 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:30:15.981 5863 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:30:17.124 7006 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:30:17.128 7010 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:30:18.811 8693 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:30:19.142 9024 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:30:19.165 9047 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:30:19.871 9753 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 9.279 seconds (process running for 10.191)
+22:30:28.900 18782 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+22:30:28.905 18787 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+22:30:28.911 18793 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:30:28.913 18795 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:30:28.914 18796 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:30:28.914 18796 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:30:28.914 18796 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:30:28.914 18796 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:30:28.915 18797 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:30:28.916 18798 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+22:30:28.917 18799 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+22:30:28.918 18800 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:30:28.919 18801 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:30:28.923 18805 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+22:30:28.924 18806 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:30:28.924 18806 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+22:30:28.924 18806 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+22:30:28.925 18807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+22:30:28.925 18807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+22:30:28.925 18807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:30:28.925 18807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:30:28.925 18807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:30:28.925 18807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:30:28.926 18808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:30:28.926 18808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:30:28.926 18808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:30:28.926 18808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:30:28.926 18808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+22:30:28.926 18808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:30:28.926 18808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:30:28.927 18809 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:30:28.927 18809 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:30:28.927 18809 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:30:28.927 18809 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+22:30:28.927 18809 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:30:28.928 18810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+22:30:28.928 18810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:30:28.928 18810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+22:30:28.928 18810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:30:28.928 18810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+22:30:28.928 18810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:30:28.928 18810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+22:30:28.929 18811 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:31:26.283 1097 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:31:26.362 1176 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 7588 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:31:26.364 1178 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:31:27.669 2483 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:31:27.959 2773 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 266 ms. Found 3 JPA repository interfaces.
+22:31:29.268 4082 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:31:29.291 4105 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:31:29.295 4109 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:31:29.295 4109 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:31:29.447 4261 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:31:29.448 4262 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3007 ms
+22:31:29.906 4720 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:31:30.215 5029 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28554ac8
+22:31:30.217 5031 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:31:30.274 5088 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:31:30.393 5207 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.069s)
+22:31:30.428 5242 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:31:30.435 5249 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:31:30.607 5421 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:31:30.708 5522 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:31:30.781 5595 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:31:31.231 6045 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:31:32.361 7175 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:31:32.370 7184 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:31:34.420 9234 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:31:35.187 10001 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:31:35.240 10054 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:31:36.399 11213 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 10.671 seconds (process running for 11.537)
+22:31:44.089 18903 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+22:31:44.101 18915 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+22:31:44.116 18930 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:31:44.120 18934 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:31:44.121 18935 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:31:44.122 18936 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:31:44.124 18938 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:31:44.124 18938 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:31:44.125 18939 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:31:44.125 18939 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+22:31:44.126 18940 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+22:31:44.129 18943 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:31:44.131 18945 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:31:44.132 18946 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+22:31:44.133 18947 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:31:44.134 18948 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+22:31:44.135 18949 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+22:31:44.137 18951 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+22:31:44.138 18952 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+22:31:44.139 18953 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:31:44.141 18955 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:31:44.142 18956 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:31:44.143 18957 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:31:44.144 18958 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:31:44.146 18960 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:31:44.147 18961 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:31:44.148 18962 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:31:44.148 18962 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+22:31:44.150 18964 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:31:44.151 18965 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:31:44.152 18966 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:31:44.152 18966 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:31:44.153 18967 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:31:44.153 18967 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+22:31:44.153 18967 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:31:44.153 18967 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+22:31:44.154 18968 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:31:44.154 18968 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+22:31:44.155 18969 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:31:44.155 18969 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+22:31:44.156 18970 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:31:44.156 18970 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+22:31:44.157 18971 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:32:46.141 1020 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:32:46.222 1101 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 12680 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:32:46.224 1103 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:32:47.501 2380 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:32:47.784 2663 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 261 ms. Found 3 JPA repository interfaces.
+22:32:48.914 3793 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:32:48.925 3804 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:32:48.927 3806 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:32:48.928 3807 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:32:49.035 3914 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:32:49.035 3914 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2737 ms
+22:32:49.475 4354 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:32:49.754 4633 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f7e52d1
+22:32:49.756 4635 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:32:49.812 4691 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:32:49.928 4807 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.079s)
+22:32:49.970 4849 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:32:49.975 4854 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:32:50.160 5039 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:32:50.274 5153 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:32:50.345 5224 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:32:50.913 5792 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:32:52.075 6954 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:32:52.086 6965 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:32:53.717 8596 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:32:54.076 8955 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:32:54.109 8988 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:32:54.728 9607 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 9.112 seconds (process running for 9.882)
+22:33:03.430 18309 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+22:33:03.433 18312 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+22:33:03.438 18317 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:33:03.439 18318 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:33:03.439 18318 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:33:03.439 18318 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:33:03.439 18318 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:33:03.439 18318 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:33:03.440 18319 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:33:03.440 18319 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+22:33:03.441 18320 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+22:33:03.442 18321 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:33:03.442 18321 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:33:03.442 18321 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+22:33:03.443 18322 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:33:03.443 18322 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+22:33:03.443 18322 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+22:33:03.443 18322 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+22:33:03.443 18322 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+22:33:03.443 18322 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:33:03.444 18323 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:33:03.444 18323 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:33:03.444 18323 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:33:03.444 18323 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:33:03.444 18323 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:33:03.444 18323 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:33:03.445 18324 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:33:03.445 18324 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+22:33:03.445 18324 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:33:03.445 18324 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:33:03.445 18324 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:33:03.445 18324 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:33:03.446 18325 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:33:03.446 18325 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+22:33:03.446 18325 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:33:03.446 18325 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+22:33:03.446 18325 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:33:03.446 18325 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+22:33:03.446 18325 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:33:03.447 18326 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+22:33:03.447 18326 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:33:03.447 18326 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+22:33:03.447 18326 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
+22:34:45.999 999  [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:34:46.064 1064 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Starting CargoApplication using Java 17.0.11 with PID 11092 (C:\java_projects\cargoSizeDto\build\classes\java\main started by Admin in C:\java_projects\cargoSizeDto)
+22:34:46.066 1066 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - No active profile set, falling back to 1 default profile: "default"
+22:34:47.356 2356 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:34:47.638 2638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 249 ms. Found 3 JPA repository interfaces.
+22:34:48.821 3821 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+22:34:48.835 3835 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+22:34:48.838 3838 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:34:48.838 3838 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+22:34:48.938 3938 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:34:48.939 3939 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2802 ms
+22:34:49.360 4360 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:34:49.666 4666 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e3283f6
+22:34:49.669 4669 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:34:49.728 4728 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cargodb (PostgreSQL 15.7)
+22:34:49.850 4850 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.085s)
+22:34:49.887 4887 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.2
+22:34:49.893 4893 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+22:34:50.067 5067 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:34:50.186 5186 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+22:34:50.263 5263 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:34:50.827 5827 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:34:52.012 7012 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:34:52.017 7017 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:34:53.695 8695 [main] WARN  org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+22:34:54.010 9010 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+22:34:54.036 9036 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+22:34:54.636 9636 [main] INFO  v.rastvotov.cargoSizeDto.CargoApplication - Started CargoApplication in 9.125 seconds (process running for 9.928)
+22:35:24.762 39762 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.cargoSizeDto.telegram.TelegramBot - chatId: '126115734' messageText: '/load'
+22:35:24.770 39770 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.cargoSizeDto.CargoServiceImpl - получение всего груза: '
+1
+
+1
+
+22
+
+22
+
+333
+
+333
+
+4444
+
+4444
+
+8888
+8888
+
+8888
+8888
+
+777
+7777
+
+55555
+
+666
+666
+
+22
+
+1
+
+1
+
+999
+999
+999
+
+
+999
+999
+999
+
+
+999
+999
+999'
+22:35:24.781 39781 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:35:24.786 39786 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:35:24.787 39787 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:35:24.789 39789 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:35:24.790 39790 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 9 [3, 3, 3]
+22:35:24.791 39791 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:35:24.793 39793 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:35:24.794 39794 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 9, 9, 9], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0], [9, 9, 9, 0, 0, 0]] 0
+22:35:24.796 39796 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[9, 9, 9]'
+22:35:24.799 39799 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 8 [4, 4]
+22:35:24.800 39800 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:35:24.800 39800 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 7 [4, 3]
+22:35:24.801 39801 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:35:24.802 39802 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 6 [3, 3]
+22:35:24.803 39803 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 true [[8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [8, 8, 8, 8, 0, 0], [7, 7, 7, 7, 0, 0], [7, 7, 7, 0, 0, 0]] 0
+22:35:24.804 39804 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[8, 8, 7]'
+22:35:24.804 39804 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 5 [5]
+22:35:24.805 39805 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 2
+22:35:24.805 39805 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:35:24.805 39805 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:35:24.806 39806 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 4 [4]
+22:35:24.806 39806 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:35:24.807 39807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:35:24.807 39807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 0, 0, 0], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 0
+22:35:24.807 39807 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 3 [3]
+22:35:24.808 39808 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 0, 0, 0], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 1
+22:35:24.809 39809 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:35:24.810 39810 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 0, 0], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 3
+22:35:24.811 39811 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:35:24.812 39812 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 0, 0], [0, 0, 0, 0, 0, 0]] 4
+22:35:24.813 39813 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 2 [2]
+22:35:24.814 39814 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 0 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [0, 0, 0, 0, 0, 0]] 5
+22:35:24.815 39815 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:35:24.815 39815 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 5 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 0], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 2
+22:35:24.816 39816 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:35:24.816 39816 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 2 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 0, 0, 0, 0]] 5
+22:35:24.817 39817 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:35:24.817 39817 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 3 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 0, 0, 0]] 5
+22:35:24.818 39818 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод getCargoPosition: 1 [1]
+22:35:24.818 39818 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.service.truck.util.TruckUtil - метод fillCargoToTruck 4 false [[6, 6, 6, 3, 3, 3], [6, 6, 6, 3, 3, 3], [5, 5, 5, 5, 5, 1], [4, 4, 4, 4, 2, 2], [4, 4, 4, 4, 2, 2], [2, 2, 1, 1, 0, 0]] 5
+22:35:24.819 39819 [HomeWorkCargoTruckBot Telegram Executor] INFO  v.r.c.s.truck.TruckServiceImpl - погрузка автомобиля: '[6, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]'
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n
