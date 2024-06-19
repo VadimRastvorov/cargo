@@ -3,7 +3,6 @@ package ru.homework.cargo.service;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.dto.CargoStartPositionDto;
-import ru.homework.cargo.dto.jpa.ParcelTypeDto;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
@@ -33,7 +32,7 @@ public class CargoService {
                 })
                 .findFirst()
                 .map(pos -> createCargoStartPosition(parcel, pos[0], pos[1], false))
-                .orElseGet(() -> createCargoStartPosition(parcel,0, 0, true));
+                .orElseGet(() -> createCargoStartPosition(parcel, 0, 0, true));
     }
 
     private CargoStartPositionDto createCargoStartPosition(char[][] parcel, int height, int width, boolean fullTruck) {

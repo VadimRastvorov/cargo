@@ -53,12 +53,11 @@ def management = dependencyManagement {
 	}
 }
 management
-
-
+*/
 tasks.named('test') {
 	useJUnitPlatform()
 }
- */
+
 tasks.withType(JavaCompile).configureEach {
 	options.encoding = 'UTF-8'
 }
@@ -68,3 +67,5 @@ final def type = tasks.withType(Test).tap {
 	}
 }
 type
+
+test { jvmArgs "-Xshare:off"; /* ... */ }

@@ -10,5 +10,6 @@ import ru.homework.cargo.repository.entity.Request;
 public interface RequestMapper {
     @Mapping(target = "createdDate", expression = "java(java.time.LocalDateTime.now())")
     Request toEntity(RequestDto source);
+
     RequestDto toDto(Request source);
 }

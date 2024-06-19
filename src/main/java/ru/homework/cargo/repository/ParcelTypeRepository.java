@@ -12,6 +12,8 @@ import java.util.Optional;
 @Repository
 public interface ParcelTypeRepository extends JpaRepository<ParcelType, Long> {
     List<ParcelType> findAllByOrderByIdAsc();
+
     List<ParcelType> findByTitleContainsIgnoreCaseOrderByIdAsc(String title);
+
     Optional<ParcelType> findByCode(String code);
 }

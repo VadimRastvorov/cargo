@@ -4,9 +4,9 @@ import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.dto.jpa.ParcelTypeDto;
+import ru.homework.cargo.mapper.ParcelTypeMapper;
 import ru.homework.cargo.repository.ParcelTypeRepository;
 import ru.homework.cargo.repository.entity.ParcelType;
-import ru.homework.cargo.mapper.ParcelTypeMapper;
 
 import java.util.List;
 

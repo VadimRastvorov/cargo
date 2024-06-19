@@ -2,9 +2,9 @@ package ru.homework.cargo.service.telegram;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import ru.homework.cargo.dto.telegram.ArgumentsDto;
 import ru.homework.cargo.dto.telegram.LoadTruckDto;
 import ru.homework.cargo.dto.telegram.SaveDataTypeDto;
-import ru.homework.cargo.dto.telegram.ArgumentsDto;
 import ru.homework.cargo.type.TelegramCommandType;
 
 import java.util.Arrays;

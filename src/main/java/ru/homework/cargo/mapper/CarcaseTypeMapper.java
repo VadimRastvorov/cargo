@@ -10,5 +10,6 @@ import ru.homework.cargo.repository.entity.CarcaseType;
 public interface CarcaseTypeMapper {
     @Mapping(target = "createdDate", expression = "java(java.time.LocalDateTime.now())")
     CarcaseType toEntity(CarcaseTypeDto source);
+
     CarcaseTypeDto toDto(CarcaseType source);
 }
