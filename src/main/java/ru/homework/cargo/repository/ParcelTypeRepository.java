@@ -6,7 +6,6 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.homework.cargo.repository.entity.ParcelType;
 
 import java.util.List;
-import java.util.Optional;
 
 @Transactional
 @Repository

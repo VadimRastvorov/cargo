@@ -4,9 +4,8 @@ import java.util.Arrays;
 
 public enum TelegramCommandType {
     START("/start"),
-    LOAD("/load"),
+    LOAD("/загрузить"),
     CARGO("/cargo"),
-    ЗАГРУЗИТЬ("/загрузить"),
     SAVE("/save");
     private final String command;
 

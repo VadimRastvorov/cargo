@@ -20,7 +20,7 @@ class TelegramArgumentsServiceTest {
 
         ArgumentsDto argumentsDto = telegramArgumentsService.createTelegramArguments(message);
 
-        assertThat(argumentsDto.getTelegramCommandType()).isEqualTo(TelegramCommandType.ЗАГРУЗИТЬ);
+        assertThat(argumentsDto.getTelegramCommandType()).isEqualTo(TelegramCommandType.LOAD);
         Map<String, String> parameters = argumentsDto.getParameters();
         assertThat(parameters).containsEntry("в", "Газель 6 на 6");
         assertThat(parameters).containsEntry("машин", "2");

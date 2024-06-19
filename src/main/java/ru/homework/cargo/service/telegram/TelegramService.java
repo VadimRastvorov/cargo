@@ -29,9 +29,6 @@ public class TelegramService {
             case SAVE -> saveDataService
                     .saveToDataBase(telegramArgumentsService
                             .saveDataType(argumentsDto.getParameters()));
-            case ЗАГРУЗИТЬ -> loadingTruckService
-                    .loadTrucksService(telegramArgumentsService
-                            .createLoadTruck(argumentsDto.getParameters()));
         };
     }
 }
