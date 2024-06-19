@@ -5,12 +5,16 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.dto.jpa.CarcaseTypeDto;
+import ru.homework.cargo.dto.jpa.CargoReportDto;
 import ru.homework.cargo.dto.jpa.ParcelTypeDto;
 import ru.homework.cargo.dto.telegram.LoadTruckDto;
 import ru.homework.cargo.exception.CustomException;
 import ru.homework.cargo.service.jpa.CarcaseTypeDataService;
+import ru.homework.cargo.service.jpa.CargoReportDataService;
 import ru.homework.cargo.service.jpa.ParcelTypeDataService;
+import ru.homework.cargo.service.json.JsonConvertService;
 import ru.homework.cargo.type.AlgorithmType;
+import ru.homework.cargo.util.Transformer;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,6 +28,8 @@ public class LoadingTruckService {
     private final CarcaseTypeDataService carcaseTypeDataService;
     private final PrintLoadingTruck printLoadingTruck;
     private final AlgorithmService algorithmService;
+    private final JsonConvertService jsonConvertService;
+    private final CargoReportDataService cargoReportDataService;
 
     public String loadTrucksService(LoadTruckDto loadTruckDto) {
         log.info("метод loadTrucksServiceVersion2: {}", loadTruckDto);
@@ -31,7 +37,20 @@ public class LoadingTruckService {
         List<CarcaseTypeDto> carcaseTypeDtoList = getCarcaseTypeDtoList(loadTruckDto.getTruckTitle());
         validateCarcaseTypeDtoList(carcaseTypeDtoList, loadTruckDto.getTruckTitle());
         List<char[][]> trucks = getTruckList(carcaseTypeDtoList, parcelTypeDtoList, loadTruckDto);
-        return printTruckLoading(trucks);
+        String print = printTruckLoading(trucks);
+        saveCargoReportData(trucks, print, loadTruckDto);
+        return print;
+    }
+
+    private void saveCargoReportData(List<char[][]> trucks, String print, LoadTruckDto loadTruckDto) {
+        cargoReportDataService.saveData(CargoReportDto.builder()
+                .cargoJson(jsonConvertService.truckListJsonToJsonString(Transformer.trucksToTrucksJson(trucks)))
+                .cargo(print)
+                .truck(loadTruckDto.getTruckTitle())
+                .parcels(loadTruckDto.getParcel())
+                .truckCount(loadTruckDto.getTruckCount())
+                .algorithm(loadTruckDto.getAlgorithmName())
+                .build());
     }
 
     private List<char[][]> getTruckList(List<CarcaseTypeDto> carcaseTypeDtoList,

@@ -39,6 +39,12 @@ public class CargoController {
         return ResponseEntity.ok(parcelTypeDataService.findDataTitle(title));
     }
 
+    @GetMapping("/parcel/{id}")
+    public ResponseEntity<ParcelTypeDto> findById(@PathVariable Long id) {
+        log.info("вызов метода findById");
+        return ResponseEntity.ok(parcelTypeDataService.findDataById(id));
+    }
+
     @PostMapping(
             value = "/saveCarcaseType", consumes = "application/json", produces = "application/json")
     public ResponseEntity<CarcaseTypeDto> saveCarcaseType(@RequestBody CarcaseTypeDto carcaseTypeDto) {

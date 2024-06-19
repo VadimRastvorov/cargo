@@ -10,5 +10,5 @@ import java.util.List;
 @Getter
 @JsonAutoDetect
 public class TruckListJson {
-    final List<CargoJson> truckList;
+    private final List<CargoJson> truckList;
 }

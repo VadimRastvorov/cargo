@@ -53,31 +53,4 @@ class JsonConvertServiceTest {
 
         assertThat(jsonString).isEqualTo(expectedJsonString);
     }
-
-    @Test
-    void shouldConvertTrucksToTrucksJson() {
-        List<TruckDto> trucks = Collections.singletonList(
-                TruckDto.builder().cargoTruck(new char[][]{{'I', 't', 'e', 'm', '1'}, {' ', 'I', 't', 'e', 'm', '2'}}).build()
-        );
-        TruckListJson expectedTruckListJson = TruckListJson.builder()
-                .truckList(Collections.singletonList(CargoJson.builder().cargo(Arrays.asList("Item1", "Item2")).build()))
-                .build();
-
-        TruckListJson truckListJson = jsonConvertService.trucksToTrucksJson(trucks);
-
-        assertThat(truckListJson.getTruckList().size()).isEqualTo(expectedTruckListJson.getTruckList().size());
-    }
-
-    @Test
-    void shouldConvertTruckListJsonToTrucks() {
-        TruckListJson truckListJson = TruckListJson.builder()
-                .truckList(Collections.singletonList(CargoJson.builder().cargo(Arrays.asList("Item1", "Item2")).build()))
-                .build();
-        List<TruckDto> expectedTrucks = Collections.singletonList(
-                TruckDto.builder().cargoTruck(new char[][]{{'I', 't', 'e', 'm', '1'}, {' ', 'I', 't', 'e', 'm', '2'}}).build()
-        );
-
-        List<TruckDto> trucks = jsonConvertService.truckListJsonToTrucks(truckListJson);
-        assertThat(trucks.size()).isEqualTo(expectedTrucks.size());
-    }
 }
