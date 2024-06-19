@@ -32,18 +32,19 @@ public class LoadingTruckService {
     private final CargoReportDataService cargoReportDataService;
 
     public String loadTrucksService(LoadTruckDto loadTruckDto) {
-        log.info("метод loadTrucksServiceVersion2: {}", loadTruckDto);
+        log.info("метод loadTrucksService loadTruckDto: {}", loadTruckDto);
         List<String> parcelTypeDtoList = getParcelTypeDtoList(loadTruckDto.getParcel());
         List<CarcaseTypeDto> carcaseTypeDtoList = getCarcaseTypeDtoList(loadTruckDto.getTruckTitle());
         validateCarcaseTypeDtoList(carcaseTypeDtoList, loadTruckDto.getTruckTitle());
         List<char[][]> trucks = getTruckList(carcaseTypeDtoList, parcelTypeDtoList, loadTruckDto);
         String print = printTruckLoading(trucks);
-        saveCargoReportData(trucks, print, loadTruckDto);
+        CargoReportDto cargoReportDto = saveCargoReportData(trucks, print, loadTruckDto);
+        log.info("метод loadTrucksService cargoReportDto: {}", cargoReportDto);
         return print;
     }
 
-    private void saveCargoReportData(List<char[][]> trucks, String print, LoadTruckDto loadTruckDto) {
-        cargoReportDataService.saveData(CargoReportDto.builder()
+    private CargoReportDto saveCargoReportData(List<char[][]> trucks, String print, LoadTruckDto loadTruckDto) {
+        return cargoReportDataService.saveData(CargoReportDto.builder()
                 .cargoJson(jsonConvertService.truckListJsonToJsonString(Transformer.trucksToTrucksJson(trucks)))
                 .cargo(print)
                 .truck(loadTruckDto.getTruckTitle())
