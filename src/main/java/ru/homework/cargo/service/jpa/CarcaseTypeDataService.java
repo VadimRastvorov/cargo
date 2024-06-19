@@ -19,6 +19,11 @@ public class CarcaseTypeDataService {
         CarcaseType carcaseType = carcaseTypeRepository.save(carcaseTypeMapper.toEntity(carcaseTypeDto));
         return carcaseTypeMapper.toDto(carcaseType);
     }
+    public CarcaseTypeDto saveData(CarcaseType carcaseTypeDto) {
+        CarcaseType carcaseType = carcaseTypeRepository.save(carcaseTypeDto);
+        return carcaseTypeMapper.toDto(carcaseType);
+    }
+
 
     public List<CarcaseTypeDto> findAllData() {
         return carcaseTypeRepository.findAllByOrderByIdAsc().stream()

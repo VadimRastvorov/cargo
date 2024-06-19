@@ -10,6 +10,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import ru.homework.cargo.config.telegram.BotConfig;
 import ru.homework.cargo.dto.domain.RequestDto;
 import ru.homework.cargo.dto.domain.ResponseDto;
+import ru.homework.cargo.exception.CustomException;
 import ru.homework.cargo.service.jpa.RequestDataService;
 import ru.homework.cargo.service.jpa.ResponseDataService;
 
@@ -39,22 +40,28 @@ public class TelegramBot extends TelegramLongPollingBot {
             requestDataService.saveData(RequestDto.builder().message(messageText).source("telegram").build());
             long chatId = update.getMessage().getChatId();
             log.info("chatId: '{}' messageText: '{}'", chatId, messageText);
-
             String messageTextOut;
+
             try {
                 messageTextOut = telegramService.telegramPrint(messageText, update.getMessage().getChat().getFirstName());
-            } catch (Exception ex) {
+            } catch (CustomException ex){
                 messageTextOut = ex.getMessage();
             }
+            catch (Exception ex) {
+                throw new RuntimeException(ex.getMessage(), ex);
+            }
+            //todo избавиться от isBlank
             sendMessage(chatId, (messageTextOut.isBlank()) ? "В ответ вернулась пустая строка" : messageTextOut);
         }
     }
 
     private void sendMessage(Long chatId, String textToSend) {
+        //todo builder
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(String.valueOf(chatId));
         sendMessage.setText(textToSend);
         try {
+            //todo убратть или заменить на логирование в одной табле
             responseDataService.saveData(ResponseDto.builder().message(textToSend).source("telegram").build());
             execute(sendMessage);
         } catch (TelegramApiException e) {

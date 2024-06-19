@@ -19,6 +19,7 @@ public class CargoController {
     private final CarcaseTypeDataService carcaseTypeDataService;
     private final ParcelTypeDataService parcelTypeDataService;
 
+    //todo без all
     @GetMapping("/carcase/all")
     public ResponseEntity<List<CarcaseTypeDto>> findAllCarcaseType() {
         log.info("вызов метода findAllCarcaseType");
@@ -30,7 +31,7 @@ public class CargoController {
         log.info("вызов метода findAllParcelType");
         return ResponseEntity.ok(parcelTypeDataService.findAllData());
     }
-
+    //todo parcelsByTitle - кебаб
     @GetMapping("/parcelsByTitle/{title}")
     public ResponseEntity<List<ParcelTypeDto>> findByParcelTypeTitle(@PathVariable String title) {
         log.info("вызов метода findByParcelTypeTitle");
@@ -44,6 +45,7 @@ public class CargoController {
     }
 
     @PostMapping(
+            //todo saveCarcaseType - кебаб
             value = "/saveCarcaseType", consumes = "application/json", produces = "application/json")
     public ResponseEntity<CarcaseTypeDto> saveCarcaseType(@RequestBody CarcaseTypeDto carcaseTypeDto) {
         log.info("вызов метода saveCarcaseType");

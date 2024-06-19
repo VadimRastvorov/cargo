@@ -21,6 +21,11 @@ public class ParcelTypeDataService {
         return parcelTypeMapper.toDto(parcelType);
     }
 
+    public ParcelTypeDto saveData(ParcelTypeDto parcelTypeDto) {
+        ParcelType parcelType = parcelTypeRepository.save(parcelTypeMapper.toEntity(parcelTypeDto));
+        return parcelTypeMapper.toDto(parcelType);
+    }
+
     public List<ParcelTypeDto> findAllData() {
         return parcelTypeRepository.findAllByOrderByIdAsc().stream()
                 .map(parcelTypeMapper::toDto)

@@ -5,6 +5,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import ru.homework.cargo.dto.domain.CarcaseTypeDto;
 import ru.homework.cargo.entity.CarcaseType;
+import ru.homework.cargo.type.SaveDataType;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface CarcaseTypeMapper {
@@ -12,4 +13,5 @@ public interface CarcaseTypeMapper {
     CarcaseType toEntity(CarcaseTypeDto source);
 
     CarcaseTypeDto toDto(CarcaseType source);
+
 }

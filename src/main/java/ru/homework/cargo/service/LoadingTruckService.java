@@ -30,20 +30,23 @@ public class LoadingTruckService {
     private final AlgorithmService algorithmService;
     private final JsonConvertService jsonConvertService;
     private final CargoReportDataService cargoReportDataService;
-
+    //todo разбить по классам чтобы можно было тестить каждый метод
     public String loadTrucksService(LoadTruckDto loadTruckDto) {
         log.info("метод loadTrucksService loadTruckDto: {}", loadTruckDto);
         List<String> parcelTypeDtoList = getParcelTypeDtoList(loadTruckDto.getParcel());
-        List<CarcaseTypeDto> carcaseTypeDtoList = getCarcaseTypeDtoList(loadTruckDto.getTruckTitle());
+        List<CarcaseTypeDto> carcaseTypeDtoList = carcaseTypeDataService.findDataTitle(loadTruckDto.getTruckTitle());
         validateCarcaseTypeDtoList(carcaseTypeDtoList, loadTruckDto.getTruckTitle());
         List<char[][]> trucks = getTruckList(carcaseTypeDtoList, parcelTypeDtoList, loadTruckDto);
-        String print = printTruckLoading(trucks);
+        String print = printLoadingTruck.printStringFromListCharTrucks(trucks);
+//        //todo не dto
         CargoReportDto cargoReportDto = saveCargoReportData(trucks, print, loadTruckDto);
         log.info("метод loadTrucksService cargoReportDto: {}", cargoReportDto);
-        return print;
+        return cargoReportDto.getCargo();         //todo не dto
+
     }
 
     private CargoReportDto saveCargoReportData(List<char[][]> trucks, String print, LoadTruckDto loadTruckDto) {
+        //todo mapper
         return cargoReportDataService.saveData(CargoReportDto.builder()
                 .cargoJson(jsonConvertService.truckListJsonToJsonString(Transformer.trucksToTrucksJson(trucks)))
                 .cargo(print)

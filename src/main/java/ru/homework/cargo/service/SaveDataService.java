@@ -3,7 +3,6 @@ package ru.homework.cargo.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.dto.domain.CarcaseTypeDto;
 import ru.homework.cargo.dto.domain.ParcelTypeDto;
 import ru.homework.cargo.dto.telegram.SaveDataTypeDto;
 import ru.homework.cargo.service.jpa.CarcaseTypeDataService;
@@ -16,7 +15,7 @@ import ru.homework.cargo.type.SaveDataType;
 public class SaveDataService {
     private final CarcaseTypeDataService carcaseTypeDataService;
     private final ParcelTypeDataService parcelTypeDataService;
-
+    // todo фабрика
     public String saveToDataBase(SaveDataTypeDto saveDataTypeDto) {
         log.info("метод saveToDataBase: {}", saveDataTypeDto);
         return switch (SaveDataType.get(saveDataTypeDto.getType())) {
@@ -29,14 +28,9 @@ public class SaveDataService {
                     saveDataTypeDto.getParcel());
         };
     }
-
-    private String saveToCarcaseType(String code, String title, long width, long height) {
-        return carcaseTypeDataService.saveData(CarcaseTypeDto.builder()
-                .code(code)
-                .title(title)
-                .width(width)
-                .height(height)
-                .build()).toString();
+    // todo маппер инпут параметров
+    private String saveToCarcaseType(CarcaseType carcaseType) {
+        return carcaseTypeRepository.save(carcaseType);
     }
 
     private String saveToParcelType(String code, String title, String parcel) {

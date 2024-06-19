@@ -1,6 +1,9 @@
 package ru.homework.cargo.service;
 
 import lombok.extern.slf4j.Slf4j;
+import org.mapstruct.BeanMapping;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.dto.CargoStartPositionDto;
 
@@ -9,6 +12,7 @@ import java.util.stream.IntStream;
 
 @Slf4j
 @Service
+
 public class CargoService {
     private final static char INITIALISED_VARIABLE= '\u0000';
 

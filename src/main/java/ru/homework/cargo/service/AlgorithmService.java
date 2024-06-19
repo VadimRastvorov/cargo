@@ -1,6 +1,7 @@
 package ru.homework.cargo.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.dto.CargoStartPositionDto;
 import ru.homework.cargo.type.AlgorithmType;
@@ -19,8 +20,8 @@ public class AlgorithmService {
                                              AlgorithmType algorithmType,
                                              List<String> parcel) {
         return switch (algorithmType) {
-            case UNIFORM -> runAlgorithmUniform(height, width, truckCount, parcel);
-            case MAXIMAL -> runAlgorithmMaximal(height, width, truckCount, parcel);
+            case UNIFORM -> CargoService();
+            case MAXIMAL -> algorithmmaximal;
             case CONSISTENT -> runAlgorithmConsistent(height, width, truckCount, parcel);
 
         };
