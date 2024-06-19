@@ -68,4 +68,4 @@ final def type = tasks.withType(Test).tap {
 }
 type
 
-test { jvmArgs "-Xshare:off"; /* ... */ }
+test { jvmArgs "-Xshare:off" /* ... */ }

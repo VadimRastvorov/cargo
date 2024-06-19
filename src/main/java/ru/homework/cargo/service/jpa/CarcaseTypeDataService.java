@@ -21,7 +21,6 @@ public class CarcaseTypeDataService {
     }
 
     public List<CarcaseTypeDto> findAllData() {
-        List<CarcaseType> carcaseTypes = carcaseTypeRepository.findAllByOrderByIdAsc();
         return carcaseTypeRepository.findAllByOrderByIdAsc().stream()
                 .map(carcaseTypeMapper::toDto)
                 .toList();
