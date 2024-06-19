@@ -3,8 +3,8 @@ package ru.homework.cargo.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.dto.jpa.CarcaseTypeDto;
-import ru.homework.cargo.dto.jpa.ParcelTypeDto;
+import ru.homework.cargo.dto.domain.CarcaseTypeDto;
+import ru.homework.cargo.dto.domain.ParcelTypeDto;
 import ru.homework.cargo.dto.telegram.SaveDataTypeDto;
 import ru.homework.cargo.service.jpa.CarcaseTypeDataService;
 import ru.homework.cargo.service.jpa.ParcelTypeDataService;
@@ -31,7 +31,6 @@ public class SaveDataService {
     }
 
     private String saveToCarcaseType(String code, String title, long width, long height) {
-        // /save -type carcase -code Г9 -title Газель 9 на 9 -width 9 -height 9
         return carcaseTypeDataService.saveData(CarcaseTypeDto.builder()
                 .code(code)
                 .title(title)
@@ -41,7 +40,6 @@ public class SaveDataService {
     }
 
     private String saveToParcelType(String code, String title, String parcel) {
-        // /save -type parcel -code Г -title Гитара в жестком кейсе -parcel ГГГГ
         return parcelTypeDataService.saveData(ParcelTypeDto.builder()
                 .code(code)
                 .title(title)

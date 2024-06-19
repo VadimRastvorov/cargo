@@ -8,8 +8,8 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import ru.homework.cargo.config.telegram.BotConfig;
-import ru.homework.cargo.dto.jpa.RequestDto;
-import ru.homework.cargo.dto.jpa.ResponseDto;
+import ru.homework.cargo.dto.domain.RequestDto;
+import ru.homework.cargo.dto.domain.ResponseDto;
 import ru.homework.cargo.service.jpa.RequestDataService;
 import ru.homework.cargo.service.jpa.ResponseDataService;
 

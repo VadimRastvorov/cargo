@@ -10,11 +10,7 @@ import java.util.stream.IntStream;
 @Slf4j
 @Service
 public class CargoService {
-    private final static char INITIALISED_VARIABLE;
-
-    static {
-        INITIALISED_VARIABLE = '\u0000';
-    }
+    private final static char INITIALISED_VARIABLE= '\u0000';
 
     public CargoStartPositionDto returnStartPosition(char[][] parcel, char[][] truck) {
         log.info("метод returnStartPosition: {}", Arrays.deepToString(parcel));

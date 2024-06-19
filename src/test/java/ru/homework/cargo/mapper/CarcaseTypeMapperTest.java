@@ -2,8 +2,8 @@ package ru.homework.cargo.mapper;
 
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
-import ru.homework.cargo.dto.jpa.CarcaseTypeDto;
-import ru.homework.cargo.repository.entity.CarcaseType;
+import ru.homework.cargo.dto.domain.CarcaseTypeDto;
+import ru.homework.cargo.entity.CarcaseType;
 
 import java.time.LocalDateTime;
 

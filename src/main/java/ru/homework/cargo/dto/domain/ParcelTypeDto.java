@@ -1,13 +1,12 @@
-package ru.homework.cargo.dto.jpa;
+package ru.homework.cargo.dto.domain;
 
 import lombok.Builder;
 import lombok.Getter;
 
 @Getter
 @Builder
-public class CarcaseTypeDto {
+public class ParcelTypeDto {
     private final String title;
     private final String code;
-    private final long width;
-    private final long height;
+    private final String parcel;
 }

@@ -1,7 +1,7 @@
 package ru.homework.cargo.util;
 
-import ru.homework.cargo.dto.json.CargoJson;
-import ru.homework.cargo.dto.json.TruckListJson;
+import ru.homework.cargo.entity.CargoJson;
+import ru.homework.cargo.entity.TruckListJson;
 
 import java.util.Arrays;
 import java.util.List;

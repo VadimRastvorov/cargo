@@ -1,4 +1,4 @@
-package ru.homework.cargo.dto.jpa;
+package ru.homework.cargo.dto.domain;
 
 import lombok.Builder;
 import lombok.Getter;

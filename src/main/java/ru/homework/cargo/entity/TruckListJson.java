@@ -1,6 +1,5 @@
-package ru.homework.cargo.dto.json;
+package ru.homework.cargo.entity;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -8,7 +7,6 @@ import java.util.List;
 
 @Builder
 @Getter
-@JsonAutoDetect
 public class TruckListJson {
     private final List<CargoJson> truckList;
 }

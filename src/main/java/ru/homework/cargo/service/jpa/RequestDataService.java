@@ -2,10 +2,10 @@ package ru.homework.cargo.service.jpa;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.dto.jpa.RequestDto;
+import ru.homework.cargo.dto.domain.RequestDto;
+import ru.homework.cargo.entity.Request;
 import ru.homework.cargo.mapper.RequestMapper;
 import ru.homework.cargo.repository.RequestRepository;
-import ru.homework.cargo.repository.entity.Request;
 
 @Service
 @RequiredArgsConstructor

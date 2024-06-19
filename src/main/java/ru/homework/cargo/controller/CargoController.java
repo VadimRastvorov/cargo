@@ -2,11 +2,10 @@ package ru.homework.cargo.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.homework.cargo.dto.jpa.CarcaseTypeDto;
-import ru.homework.cargo.dto.jpa.ParcelTypeDto;
+import ru.homework.cargo.dto.domain.CarcaseTypeDto;
+import ru.homework.cargo.dto.domain.ParcelTypeDto;
 import ru.homework.cargo.service.jpa.CarcaseTypeDataService;
 import ru.homework.cargo.service.jpa.ParcelTypeDataService;
 
@@ -17,7 +16,6 @@ import java.util.List;
 @AllArgsConstructor
 @RequestMapping("api/cargo")
 public class CargoController {
-    @Autowired
     private final CarcaseTypeDataService carcaseTypeDataService;
     private final ParcelTypeDataService parcelTypeDataService;
 

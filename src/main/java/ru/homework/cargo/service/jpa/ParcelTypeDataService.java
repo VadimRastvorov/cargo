@@ -1,12 +1,12 @@
 package ru.homework.cargo.service.jpa;
 
-import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.dto.jpa.ParcelTypeDto;
+import ru.homework.cargo.dto.domain.ParcelTypeDto;
+import ru.homework.cargo.entity.ParcelType;
+import ru.homework.cargo.exception.CustomException;
 import ru.homework.cargo.mapper.ParcelTypeMapper;
 import ru.homework.cargo.repository.ParcelTypeRepository;
-import ru.homework.cargo.repository.entity.ParcelType;
 
 import java.util.List;
 
@@ -34,7 +34,7 @@ public class ParcelTypeDataService {
     }
 
     public ParcelTypeDto findDataById(Long id) {
-        ParcelType parcelType = parcelTypeRepository.findById(id).orElseThrow(() -> new NotFoundException("Тип посылки не найден"));
+        ParcelType parcelType = parcelTypeRepository.findById(id).orElseThrow(() -> new CustomException("Тип посылки не найден"));
         return parcelTypeMapper.toDto(parcelType);
     }
 }

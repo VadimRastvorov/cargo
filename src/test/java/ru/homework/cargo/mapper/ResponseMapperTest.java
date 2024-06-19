@@ -2,8 +2,8 @@ package ru.homework.cargo.mapper;
 
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
-import ru.homework.cargo.dto.jpa.ResponseDto;
-import ru.homework.cargo.repository.entity.Response;
+import ru.homework.cargo.dto.domain.ResponseDto;
+import ru.homework.cargo.entity.Response;
 
 import java.time.LocalDateTime;
 

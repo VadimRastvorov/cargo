@@ -3,8 +3,8 @@ package ru.homework.cargo.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
-import ru.homework.cargo.dto.jpa.CargoReportDto;
-import ru.homework.cargo.repository.entity.CargoReport;
+import ru.homework.cargo.dto.domain.CargoReportDto;
+import ru.homework.cargo.entity.CargoReport;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface CargoReportMapper {

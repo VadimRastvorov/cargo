@@ -1,16 +1,16 @@
-package ru.homework.cargo.repository.entity;
+package ru.homework.cargo.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Getter
 @Setter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Table(name = "carcase_type", schema = "cargo")
 public class CarcaseType {
     @Id
