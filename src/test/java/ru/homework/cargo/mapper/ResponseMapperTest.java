@@ -30,11 +30,10 @@ class ResponseMapperTest {
 
     @Test
     void shouldMapResponseEntityToDto() {
-        Response response = Response.builder()
-                .message("New Response")
-                .source("This is a new response")
-                .createdDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0))
-                .build();
+        Response response = new Response();
+        response.setMessage("New Response");
+        response.setSource("This is a new response");
+        response.setCreatedDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0));
 
         ResponseDto responseDto = mapper.toDto(response);
 

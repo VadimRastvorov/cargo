@@ -58,8 +58,8 @@ public class TelegramBot extends TelegramLongPollingBot {
             responseDataService.saveData(ResponseDto.builder().message(textToSend).source("telegram").build());
             execute(sendMessage);
         } catch (TelegramApiException e) {
-            log.info("TelegramApiException In Method sendMessage: '{}'", e);
-            responseDataService.saveData(ResponseDto.builder().message("TelegramApiException In Method sendMessage: " + e.toString()).source("telegram").build());
+            log.info("TelegramApiException In Method sendMessage: '{}'", e.toString());
+            responseDataService.saveData(ResponseDto.builder().message("TelegramApiException In Method sendMessage: " + e).source("telegram").build());
         }
     }
 }

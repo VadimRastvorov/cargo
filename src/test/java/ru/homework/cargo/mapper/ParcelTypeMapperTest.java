@@ -31,11 +31,10 @@ class ParcelTypeMapperTest {
 
     @Test
     void shouldMapParcelTypeEntityToDto() {
-        ParcelType parcelType = ParcelType.builder()
-                .title("New Parcel Type")
-                .code("ABC123")
-                .createdDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0))
-                .build();
+        ParcelType parcelType = new ParcelType();
+        parcelType.setCode("ABC123");
+        parcelType.setTitle("New Parcel Type");
+        parcelType.setCreatedDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0));
 
         ParcelTypeDto parcelTypeDto = mapper.toDto(parcelType);
 

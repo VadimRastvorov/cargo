@@ -13,8 +13,8 @@ public class RequestDataService {
     private final RequestRepository requestRepository;
     private final RequestMapper requestMapper;
 
-    public RequestDto saveData(RequestDto requestDto) {
+    public void saveData(RequestDto requestDto) {
         Request request = requestRepository.save(requestMapper.toEntity(requestDto));
-        return requestMapper.toDto(request);
+        requestMapper.toDto(request);
     }
 }

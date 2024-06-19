@@ -13,8 +13,8 @@ public class ResponseDataService {
     private final ResponseRepository responseRepository;
     private final ResponseMapper responseMapper;
 
-    public ResponseDto saveData(ResponseDto responseDto) {
+    public void saveData(ResponseDto responseDto) {
         Response response = responseRepository.save(responseMapper.toEntity(responseDto));
-        return responseMapper.toDto(response);
+        responseMapper.toDto(response);
     }
 }

@@ -28,11 +28,10 @@ class RequestMapperTest {
 
     @Test
     void shouldMapRequestEntityToDto() {
-        Request request = Request.builder()
-                .message("New Request")
-                .source("This is a new request")
-                .createdDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0))
-                .build();
+        Request request = new Request();
+        request.setMessage("New Request");
+        request.setSource("This is a new request");
+        request.setCreatedDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0));
 
         RequestDto requestDto = mapper.toDto(request);
         assertThat(requestDto.getMessage()).isEqualTo("New Request");

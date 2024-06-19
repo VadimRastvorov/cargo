@@ -33,13 +33,12 @@ class CarcaseTypeMapperTest {
 
     @Test
     void shouldMapCarcaseTypeEntityToDto() {
-        CarcaseType carcaseType = CarcaseType.builder()
-                .title("New Carcase Type")
-                .width(10L)
-                .height(20L)
-                .code("ABC123")
-                .createdDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0))
-                .build();
+        CarcaseType carcaseType = new CarcaseType();
+        carcaseType.setTitle("New Carcase Type");
+        carcaseType.setCode("ABC123");
+        carcaseType.setHeight(20L);
+        carcaseType.setWidth(10L);
+        carcaseType.setCreatedDate(LocalDateTime.of(2023, 4, 12, 10, 30, 0));
 
         CarcaseTypeDto carcaseTypeDto = mapper.toDto(carcaseType);
         assertThat(carcaseTypeDto.getTitle()).isEqualTo("New Carcase Type");
