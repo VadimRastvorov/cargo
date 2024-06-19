@@ -22,7 +22,9 @@ public class TelegramService {
         return switch (argumentsDto.getTelegramCommandType()) {
             case START -> "Привет, " + name + "!" + "\n" +
                     "пример ввода команды: load";
-            case LOAD -> "команда была переписана, логика еще не реализованна";
+            case LOAD -> loadingTruckService
+                    .loadTrucksService(telegramArgumentsService
+                            .createLoadTruck(argumentsDto.getParameters()));
             case CARGO -> "команда была переписана, логика еще не реализованна";
             case SAVE -> saveDataService
                     .saveToDataBase(telegramArgumentsService

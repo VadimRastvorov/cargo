@@ -24,7 +24,7 @@ public class TelegramArgumentsService {
                         .skip(1)
                         .collect(Collectors
                                 .toMap(s -> s.substring(0, s.indexOf(' ')).trim(),
-                                        s -> s.substring(s.indexOf(' '), s.length()).trim()));
+                                        s -> s.substring(s.indexOf(' ')).trim()));
 
         return ArgumentsDto.builder()
                 .telegramCommandType(TelegramCommandType.get(command))

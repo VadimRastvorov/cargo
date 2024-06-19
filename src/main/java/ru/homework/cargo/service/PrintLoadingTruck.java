@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -14,7 +15,7 @@ import java.util.stream.IntStream;
 public class PrintLoadingTruck {
 
     public String printStringFromCharTruck(char[][] truck) {
-        log.info("метод printStringFromCharTruck: {}", truck.toString());
+        log.info("метод printStringFromCharTruck: {}", Arrays.deepToString(truck));
         StringBuilder stringBuilder = new StringBuilder();
         appendTopBorder(stringBuilder, truck);
         appendTruckContent(stringBuilder, truck);

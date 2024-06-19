@@ -50,7 +50,7 @@ public class LoadingTruckService {
                 .filter(StringUtils::isNotBlank)
                 .map(this::findParcelType)
                 .flatMap(List::stream)
-                .map(x -> x.getParcel())
+                .map(ParcelTypeDto::getParcel)
                 .collect(Collectors.toList());
     }
 
