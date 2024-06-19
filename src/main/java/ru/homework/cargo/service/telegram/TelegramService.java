@@ -18,7 +18,7 @@ public class TelegramService {
     public String telegramPrint(String messageText, String name) {
 
         ArgumentsDto argumentsDto = telegramArgumentsService.createTelegramArguments(messageText);
-
+        //todo сделать фабрику
         return switch (argumentsDto.getTelegramCommandType()) {
             case START -> "Привет, " + name + "!" + "\n" +
                     "пример ввода команды: load";

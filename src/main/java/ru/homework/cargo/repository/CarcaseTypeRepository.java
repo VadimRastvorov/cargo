@@ -12,7 +12,7 @@ import java.util.Optional;
 @Repository
 public interface CarcaseTypeRepository extends JpaRepository<CarcaseType, Long> {
     List<CarcaseType> findAllByOrderByIdAsc();
-
+    //todo неиспользуемые методы убрать
     Optional<CarcaseType> findByCode(String code);
 
     List<CarcaseType> findByTitleContainsIgnoreCaseOrderByIdAsc(String title);

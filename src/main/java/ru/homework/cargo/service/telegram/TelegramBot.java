@@ -41,6 +41,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             log.info("chatId: '{}' messageText: '{}'", chatId, messageText);
 
             String messageTextOut;
+            //todo вынеси в отдебльный метод try
             try {
                 messageTextOut = telegramService.telegramPrint(messageText, update.getMessage().getChat().getFirstName());
             } catch (Exception ex) {

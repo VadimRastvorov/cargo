@@ -1,4 +1,4 @@
-package ru.homework.cargo.repository.entity;
+package ru.homework.cargo.repository.entity; //todo вынеси entity из repository
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor //todo можно заменить на @RequiredArgsConstructor
+@AllArgsConstructor //todo можно заменить на @RequiredArgsConstructor
 @Table(name = "carcase_type", schema = "cargo")
 public class CarcaseType {
     @Id

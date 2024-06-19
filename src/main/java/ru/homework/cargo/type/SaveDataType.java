@@ -16,6 +16,7 @@ public enum SaveDataType {
     public static SaveDataType get(String saveType) {
         return Arrays.stream(SaveDataType.values())
                 .filter(x -> x.saveType.equals(saveType))
-                .findFirst().orElseThrow(() -> new CustomException("Ошибка SaveDataType"));
+                .findFirst().orElseThrow(() -> new CustomException("Ошибка SaveDataType")); //todo почему где то используешь new NotFoundException("Тип посылки не найден") а где то CustomException
+
     }
 }

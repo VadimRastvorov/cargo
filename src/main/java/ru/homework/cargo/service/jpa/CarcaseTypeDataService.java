@@ -21,7 +21,7 @@ public class CarcaseTypeDataService {
     }
 
     public List<CarcaseTypeDto> findAllData() {
-        List<CarcaseType> carcaseTypes = carcaseTypeRepository.findAllByOrderByIdAsc();
+        List<CarcaseType> carcaseTypes = carcaseTypeRepository.findAllByOrderByIdAsc(); //todo не используется - удалить
         return carcaseTypeRepository.findAllByOrderByIdAsc().stream()
                 .map(carcaseTypeMapper::toDto)
                 .toList();

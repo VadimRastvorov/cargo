@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 @RequestMapping("api/cargo")
 public class CargoController {
-    @Autowired
+    @Autowired //todo  @Autowired лишний ты уже инджектишь бин через private final
     private final CarcaseTypeDataService carcaseTypeDataService;
     private final ParcelTypeDataService parcelTypeDataService;
 

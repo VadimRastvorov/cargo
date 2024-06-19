@@ -19,7 +19,7 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class JsonService {
+public class JsonService {     //todo неиспользуемые сервисы убрать
     private final CargoConfig cargoConfig;
     private final JsonConvertService jsonConvertService;
 

@@ -11,7 +11,7 @@ public enum AlgorithmType {
     AlgorithmType(String name) {
         this.name = name;
     }
-
+//todo не используется
     public static AlgorithmType get(String name) {
         return Arrays.stream(AlgorithmType.values())
                 .filter(algorithmType -> algorithmType.name.equals(name))

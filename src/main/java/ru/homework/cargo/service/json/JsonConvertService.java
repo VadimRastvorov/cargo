@@ -16,13 +16,13 @@ import java.util.stream.IntStream;
 @Service
 @RequiredArgsConstructor
 public class JsonConvertService {
-    @Autowired
+    @Autowired //todo  @Autowired лишний ты уже инджектишь бин через private final
     private final Gson gson;
-
+    //todo неиспользуемые методы убрать
     public TruckListJson jsonStringToTruckListJson(String json) {
         return gson.fromJson(json, TruckListJson.class);
     }
-
+    //todo неиспользуемые методы убрать
     public String truckListJsonToJsonString(TruckListJson truckListJson) {
         return gson.toJson(truckListJson);
     }
@@ -30,7 +30,7 @@ public class JsonConvertService {
 
     public TruckListJson trucksToTrucksJson(List<TruckDto> trucks) {
         List<CargoJson> cargoJsonList = trucks.stream()
-                .map(x -> x.getCargoTruck())
+                .map(x -> x.getCargoTruck()) //todo замени на лямбду, x - плохое название для переменной
                 .map(x -> CargoJson.builder()
                         .cargo(convertToStringList(x))
                         .build())

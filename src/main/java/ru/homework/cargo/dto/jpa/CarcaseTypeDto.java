@@ -1,4 +1,4 @@
-package ru.homework.cargo.dto.jpa;
+package ru.homework.cargo.dto.jpa; //todo переименуй jpa на dto или domain
 
 import lombok.Builder;
 import lombok.Getter;

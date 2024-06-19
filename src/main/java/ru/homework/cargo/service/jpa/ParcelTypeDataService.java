@@ -32,7 +32,7 @@ public class ParcelTypeDataService {
                 .map(parcelTypeMapper::toDto)
                 .toList();
     }
-
+    //todo не используется - удалить
     public ParcelTypeDto findDataById(Long id) {
         ParcelType parcelType = parcelTypeRepository.findById(id).orElseThrow(() -> new NotFoundException("Тип посылки не найден"));
         return parcelTypeMapper.toDto(parcelType);

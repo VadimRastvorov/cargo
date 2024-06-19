@@ -6,6 +6,7 @@ public enum TelegramCommandType {
     START("/start"),
     LOAD("/load"),
     CARGO("/cargo"),
+    //todo LOAD вместо ЗАГРУЗИТЬ
     ЗАГРУЗИТЬ("/загрузить"),
     SAVE("/save");
     private final String command;

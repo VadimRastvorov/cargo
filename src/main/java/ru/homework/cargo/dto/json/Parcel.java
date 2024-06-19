@@ -1,4 +1,4 @@
-package ru.homework.cargo.dto.json;
+package ru.homework.cargo.dto.json; //todo зачем его выделить в json, переименуй в  entity и вынеси к dto
 
 import lombok.Builder;
 import lombok.Getter;

@@ -13,7 +13,7 @@ import ru.homework.cargo.type.SaveDataType;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class SaveDataService {
+public class SaveDataService { //todo сделать общий интерфейс
     private final CarcaseTypeDataService carcaseTypeDataService;
     private final ParcelTypeDataService parcelTypeDataService;
 
@@ -32,6 +32,7 @@ public class SaveDataService {
 
     private String saveToCarcaseType(String code, String title, long width, long height) {
         // /save -type carcase -code Г9 -title Газель 9 на 9 -width 9 -height 9
+        //todo комментарии убрать, можно сделать read.me файл
         return carcaseTypeDataService.saveData(CarcaseTypeDto.builder()
                 .code(code)
                 .title(title)
@@ -42,6 +43,7 @@ public class SaveDataService {
 
     private String saveToParcelType(String code, String title, String parcel) {
         // /save -type parcel -code Г -title Гитара в жестком кейсе -parcel ГГГГ
+        //todo комментарии убрать, можно сделать read.me файл
         return parcelTypeDataService.saveData(ParcelTypeDto.builder()
                 .code(code)
                 .title(title)

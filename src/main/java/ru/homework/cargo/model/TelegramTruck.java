@@ -11,10 +11,10 @@ import java.util.stream.IntStream;
 @Getter
 @Slf4j
 public class TelegramTruck {
-    private final static char INITIALISED_VARIABLE;
+    private final static char INITIALISED_VARIABLE ;
 
     static {
-        INITIALISED_VARIABLE = '\u0000';
+        INITIALISED_VARIABLE = '\u0000'; //todo почему нельзя задекларировать сразу при инициализации?
     }
 
     private final int height;

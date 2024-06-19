@@ -34,6 +34,7 @@ public class TelegramArgumentsService {
 
     public LoadTruckDto createLoadTruck(Map<String, String> parameters) {
         log.info("метод createLoadTruck: {}", parameters.toString());
+        //todo уюрать комментарий
         // /Загрузить -в Газель 6 на 6 -машин 2 -алгоритм Равномерный -посылки Торшер,Диван,Велосипед
         return LoadTruckDto.builder()
                 .truckTitle(parameters.get("в"))
