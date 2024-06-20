@@ -5,9 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.homework.cargo.dto.CarcaseTypeDto;
+import ru.homework.cargo.dto.CargoReportDto;
 import ru.homework.cargo.dto.ParcelTypeDto;
+import ru.homework.cargo.dto.TransactionLogDto;
 import ru.homework.cargo.service.jpa.CarcaseTypeDataService;
+import ru.homework.cargo.service.jpa.CargoReportDataService;
 import ru.homework.cargo.service.jpa.ParcelTypeDataService;
+import ru.homework.cargo.service.jpa.TransactionLogDataService;
 
 import java.util.List;
 
@@ -18,6 +22,8 @@ import java.util.List;
 public class CargoController {
     private final CarcaseTypeDataService carcaseTypeDataService;
     private final ParcelTypeDataService parcelTypeDataService;
+    private final TransactionLogDataService transactionLogDataService;
+    private final CargoReportDataService cargoReportDataService;
 
     @GetMapping("/carcase")
     public ResponseEntity<List<CarcaseTypeDto>> findAllCarcaseType() {
@@ -55,5 +61,19 @@ public class CargoController {
     public ResponseEntity<ParcelTypeDto> saveParcelType(@RequestBody ParcelTypeDto parcelTypeDto) {
         log.info("вызов метода saveParcelType");
         return ResponseEntity.ok(parcelTypeDataService.saveData(parcelTypeDto));
+    }
+
+    @PostMapping(
+            value = "/save-transaction-log", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<TransactionLogDto> saveTransactionLog(@RequestBody TransactionLogDto transactionLogDto) {
+        log.info("вызов метода saveTransactionLog");
+        return ResponseEntity.ok(transactionLogDataService.saveData(transactionLogDto));
+    }
+
+    @PostMapping(
+            value = "/save-cargo-report", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<CargoReportDto> saveCargoReport(@RequestBody CargoReportDto cargoReportDto) {
+        log.info("вызов метода saveCargoReport");
+        return ResponseEntity.ok(cargoReportDataService.saveData(cargoReportDto));
     }
 }

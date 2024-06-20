@@ -3,9 +3,9 @@ package ru.homework.cargo.service.jpa;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.dto.CargoReportDto;
+import ru.homework.cargo.entity.jpa.CargoReport;
 import ru.homework.cargo.mapper.jpa.CargoReportMapper;
 import ru.homework.cargo.repository.CargoReportRepository;
-import ru.homework.cargo.entity.jpa.CargoReport;
 
 @Service
 @RequiredArgsConstructor

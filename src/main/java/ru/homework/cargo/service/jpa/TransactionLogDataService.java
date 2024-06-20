@@ -13,8 +13,8 @@ public class TransactionLogDataService {
     private final TransactionLogRepository transactionLogRepository;
     private final TransactionLogMapper transactionLogMapper;
 
-    public void saveData(TransactionLogDto transactionLogDto) {
+    public TransactionLogDto saveData(TransactionLogDto transactionLogDto) {
         TransactionLog transactionLog = transactionLogRepository.save(transactionLogMapper.toEntity(transactionLogDto));
-        transactionLogMapper.toDto(transactionLog);
+        return transactionLogMapper.toDto(transactionLog);
     }
 }
