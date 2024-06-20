@@ -1,7 +1,7 @@
 package ru.homework.cargo.service;
 
 import org.junit.jupiter.api.Test;
-import ru.homework.cargo.dto.CargoStartPositionDto;
+import ru.homework.cargo.entity.CargoPosition;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -18,7 +18,7 @@ class CargoServiceTest {
 
         char[][] truck = new char[6][6];
 
-        CargoStartPositionDto startPosition = cargoService.returnStartPosition(parcel, truck);
+        CargoPosition startPosition = cargoService.returnStartPosition(parcel, truck);
 
         assertThat(startPosition.getHeight()).isEqualTo(0);
         assertThat(startPosition.getWidth()).isEqualTo(0);
@@ -43,7 +43,7 @@ class CargoServiceTest {
         truck[1][1] = 'e';
         truck[1][2] = 'e';
 
-        CargoStartPositionDto startPosition = cargoService.returnStartPosition(parcel, truck);
+        CargoPosition startPosition = cargoService.returnStartPosition(parcel, truck);
 
         assertThat(startPosition.getHeight()).isEqualTo(0);
         assertThat(startPosition.getWidth()).isEqualTo(0);

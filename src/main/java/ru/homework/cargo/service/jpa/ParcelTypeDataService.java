@@ -2,10 +2,10 @@ package ru.homework.cargo.service.jpa;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.dto.domain.ParcelTypeDto;
-import ru.homework.cargo.entity.ParcelType;
+import ru.homework.cargo.dto.ParcelTypeDto;
+import ru.homework.cargo.entity.jpa.ParcelType;
 import ru.homework.cargo.exception.CustomException;
-import ru.homework.cargo.mapper.ParcelTypeMapper;
+import ru.homework.cargo.mapper.jpa.ParcelTypeMapper;
 import ru.homework.cargo.repository.ParcelTypeRepository;
 
 import java.util.List;

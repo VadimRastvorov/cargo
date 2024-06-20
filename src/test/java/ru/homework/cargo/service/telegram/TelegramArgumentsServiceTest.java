@@ -1,9 +1,9 @@
 package ru.homework.cargo.service.telegram;
 
 import org.junit.jupiter.api.Test;
-import ru.homework.cargo.dto.telegram.ArgumentsDto;
-import ru.homework.cargo.dto.telegram.LoadTruckDto;
-import ru.homework.cargo.dto.telegram.SaveDataTypeDto;
+import ru.homework.cargo.entity.telegram.Arguments;
+import ru.homework.cargo.entity.telegram.TelegramLoadTruck;
+import ru.homework.cargo.entity.telegram.SavingType;
 import ru.homework.cargo.type.TelegramCommandType;
 
 import java.util.Map;
@@ -18,10 +18,10 @@ class TelegramArgumentsServiceTest {
     void shouldCreateTelegramArguments() {
         String message = "/Загрузить -в Газель 6 на 6 -машин 2 -алгоритм Равномерный -посылки Торшер,Диван,Велосипед";
 
-        ArgumentsDto argumentsDto = telegramArgumentsService.createTelegramArguments(message);
+        Arguments arguments = telegramArgumentsService.createTelegramArguments(message);
 
-        assertThat(argumentsDto.getTelegramCommandType()).isEqualTo(TelegramCommandType.LOAD);
-        Map<String, String> parameters = argumentsDto.getParameters();
+        assertThat(arguments.getTelegramCommandType()).isEqualTo(TelegramCommandType.LOAD);
+        Map<String, String> parameters = arguments.getParameters();
         assertThat(parameters).containsEntry("в", "Газель 6 на 6");
         assertThat(parameters).containsEntry("машин", "2");
         assertThat(parameters).containsEntry("алгоритм", "Равномерный");
@@ -37,12 +37,12 @@ class TelegramArgumentsServiceTest {
                 "посылки", "Торшер,Диван,Велосипед"
         );
 
-        LoadTruckDto loadTruckDto = telegramArgumentsService.createLoadTruck(parameters);
+        TelegramLoadTruck telegramLoadTruck = telegramArgumentsService.createLoadTruck(parameters);
 
-        assertThat(loadTruckDto.getTruckTitle()).isEqualTo("Газель 6 на 6");
-        assertThat(loadTruckDto.getTruckCount()).isEqualTo(2);
-        assertThat(loadTruckDto.getAlgorithmName()).isEqualTo("Равномерный");
-        assertThat(loadTruckDto.getParcel()).isEqualTo("Торшер,Диван,Велосипед");
+        assertThat(telegramLoadTruck.getTruckTitle()).isEqualTo("Газель 6 на 6");
+        assertThat(telegramLoadTruck.getTruckCount()).isEqualTo(2);
+        assertThat(telegramLoadTruck.getAlgorithmName()).isEqualTo("Равномерный");
+        assertThat(telegramLoadTruck.getParcel()).isEqualTo("Торшер,Диван,Велосипед");
     }
 
     @Test
@@ -56,13 +56,13 @@ class TelegramArgumentsServiceTest {
                 "type", "Мебель"
         );
 
-        SaveDataTypeDto saveDataTypeDto = telegramArgumentsService.saveDataType(parameters);
+        SavingType savingType = telegramArgumentsService.saveDataType(parameters);
 
-        assertThat(saveDataTypeDto.getTitle()).isEqualTo("Шкаф");
-        assertThat(saveDataTypeDto.getWidth()).isEqualTo(3);
-        assertThat(saveDataTypeDto.getHeight()).isEqualTo(6);
-        assertThat(saveDataTypeDto.getParcel()).isEqualTo("333,333,333,333,333,333");
-        assertThat(saveDataTypeDto.getCode()).isEqualTo("Ш");
-        assertThat(saveDataTypeDto.getType()).isEqualTo("Мебель");
+        assertThat(savingType.getTitle()).isEqualTo("Шкаф");
+        assertThat(savingType.getWidth()).isEqualTo(3);
+        assertThat(savingType.getHeight()).isEqualTo(6);
+        assertThat(savingType.getParcel()).isEqualTo("333,333,333,333,333,333");
+        assertThat(savingType.getCode()).isEqualTo("Ш");
+        assertThat(savingType.getType()).isEqualTo("Мебель");
     }
 }

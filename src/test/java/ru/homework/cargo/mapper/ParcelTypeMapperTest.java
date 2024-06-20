@@ -2,8 +2,9 @@ package ru.homework.cargo.mapper;
 
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
-import ru.homework.cargo.dto.domain.ParcelTypeDto;
-import ru.homework.cargo.entity.ParcelType;
+import ru.homework.cargo.dto.ParcelTypeDto;
+import ru.homework.cargo.entity.jpa.ParcelType;
+import ru.homework.cargo.mapper.jpa.ParcelTypeMapper;
 
 import java.time.LocalDateTime;
 

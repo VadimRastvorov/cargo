@@ -3,32 +3,18 @@ package ru.homework.cargo.service.telegram;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.dto.telegram.ArgumentsDto;
-import ru.homework.cargo.service.LoadingTruckService;
-import ru.homework.cargo.service.SaveDataService;
+import ru.homework.cargo.entity.telegram.Arguments;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class TelegramService {
     private final TelegramArgumentsService telegramArgumentsService;
-    private final SaveDataService saveDataService;
-    private final LoadingTruckService loadingTruckService;
+    private final CommandFactoryService commandFactoryService;
 
-    public String telegramPrint(String messageText, String name) {
-
-        ArgumentsDto argumentsDto = telegramArgumentsService.createTelegramArguments(messageText);
-
-        return switch (argumentsDto.getTelegramCommandType()) {
-            case START -> "Привет, " + name + "!" + "\n" +
-                    "пример ввода команды: load";
-            case LOAD -> loadingTruckService
-                    .loadTrucksService(telegramArgumentsService
-                            .createLoadTruck(argumentsDto.getParameters()));
-            case CARGO -> "команда была переписана, логика еще не реализованна";
-            case SAVE -> saveDataService
-                    .saveToDataBase(telegramArgumentsService
-                            .saveDataType(argumentsDto.getParameters()));
-        };
+    public String telegramPrint(String messageText) {
+        Arguments arguments = telegramArgumentsService.createTelegramArguments(messageText);
+        CommandService commandService = commandFactoryService.invokeCommand(arguments.getTelegramCommandType());
+        return commandService.invoke(arguments.getParameters());
     }
 }

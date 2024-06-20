@@ -3,7 +3,7 @@ package ru.homework.cargo.service.json;
 import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.entity.TruckListJson;
+import ru.homework.cargo.entity.json.TruckListJson;
 
 @Service
 @RequiredArgsConstructor
