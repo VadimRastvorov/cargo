@@ -15,8 +15,8 @@ import ru.homework.cargo.exception.CustomException;
 @Component
 @RequiredArgsConstructor
 public class TelegramBot extends TelegramLongPollingBot {
-    private final BotConfig botConfig;
     private final TelegramService telegramService;
+    private final BotConfig botConfig;
 
     @Override
     public String getBotUsername() {
@@ -44,7 +44,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
 
-    private void sendMessage(Long chatId, String textToSend) {
+    public void sendMessage(Long chatId, String textToSend) {
         try {
             execute(SendMessage.builder()
                     .chatId(chatId)

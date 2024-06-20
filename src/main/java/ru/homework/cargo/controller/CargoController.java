@@ -31,6 +31,19 @@ public class CargoController {
         return ResponseEntity.ok(carcaseTypeDataService.findAllData());
     }
 
+    @GetMapping("/carcase-by-title/{title}")
+    public ResponseEntity<List<CarcaseTypeDto>> findByCarcaseTypeTitle(@PathVariable String title) {
+        log.info("вызов метода findByCarcaseTypeTitle");
+        return ResponseEntity.ok(carcaseTypeDataService.findDataTitle(title));
+    }
+
+    @PostMapping(
+            value = "/save-carcase-type", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<CarcaseTypeDto> saveCarcaseType(@RequestBody CarcaseTypeDto carcaseTypeDto) {
+        log.info("вызов метода saveCarcaseType");
+        return ResponseEntity.ok(carcaseTypeDataService.saveData(carcaseTypeDto));
+    }
+
     @GetMapping("/parcels")
     public ResponseEntity<List<ParcelTypeDto>> findAllParcelType() {
         log.info("вызов метода findAllParcelType");
@@ -47,13 +60,6 @@ public class CargoController {
     public ResponseEntity<ParcelTypeDto> findById(@PathVariable Long id) {
         log.info("вызов метода findById");
         return ResponseEntity.ok(parcelTypeDataService.findDataById(id));
-    }
-
-    @PostMapping(
-            value = "/save-carcase-type", consumes = "application/json", produces = "application/json")
-    public ResponseEntity<CarcaseTypeDto> saveCarcaseType(@RequestBody CarcaseTypeDto carcaseTypeDto) {
-        log.info("вызов метода saveCarcaseType");
-        return ResponseEntity.ok(carcaseTypeDataService.saveData(carcaseTypeDto));
     }
 
     @PostMapping(
