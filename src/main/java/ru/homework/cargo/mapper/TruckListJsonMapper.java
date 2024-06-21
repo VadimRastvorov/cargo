@@ -27,7 +27,7 @@ public class TruckListJsonMapper {
 
     private List<String> convertCharArrayToStringList(char[][] charArray) {
         return Arrays.stream(charArray)
-                .map(x -> new String(x).replace(REPLACEMENT_SYMBOL, SUBSTITUTE_SYMBOL))
+                .map(chars -> new String(chars).replace(REPLACEMENT_SYMBOL, SUBSTITUTE_SYMBOL))
                 .collect(Collectors.toList());
     }
 }

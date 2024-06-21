@@ -17,5 +17,4 @@ public interface CarcaseTypeMapper {
     @Mapping(target = "createdDate", expression = "java(java.time.LocalDateTime.now())")
     CarcaseType fromSaveDataTypeToEntity(SavingType source);
 
-
 }

@@ -1,4 +1,4 @@
-package ru.homework.cargo.service.telegram;
+package ru.homework.cargo.service;
 
 import io.micrometer.common.util.StringUtils;
 import lombok.RequiredArgsConstructor;
