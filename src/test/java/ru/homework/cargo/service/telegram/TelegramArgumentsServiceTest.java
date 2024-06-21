@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import ru.homework.cargo.entity.telegram.Arguments;
 import ru.homework.cargo.entity.telegram.TelegramLoadTruck;
 import ru.homework.cargo.entity.telegram.SavingType;
+import ru.homework.cargo.mapper.SavingTypeMapper;
+import ru.homework.cargo.mapper.TelegramLoadTruckMapper;
 import ru.homework.cargo.type.TelegramCommandType;
 
 import java.util.Map;
@@ -12,7 +14,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class TelegramArgumentsServiceTest {
 
-    private final TelegramArgumentsService telegramArgumentsService = new TelegramArgumentsService();
+    TelegramArgumentsService telegramArgumentsService = new TelegramArgumentsService();
+    TelegramLoadTruckMapper telegramLoadTruckMapper = new TelegramLoadTruckMapper();
+    SavingTypeMapper savingTypeMapper = new SavingTypeMapper();
 
     @Test
     void shouldCreateTelegramArguments() {
@@ -37,7 +41,7 @@ class TelegramArgumentsServiceTest {
                 "посылки", "Торшер,Диван,Велосипед"
         );
 
-        TelegramLoadTruck telegramLoadTruck = telegramArgumentsService.createLoadTruck(parameters);
+        TelegramLoadTruck telegramLoadTruck = telegramLoadTruckMapper.mapToLoadTruck(parameters);
 
         assertThat(telegramLoadTruck.getTruckTitle()).isEqualTo("Газель 6 на 6");
         assertThat(telegramLoadTruck.getTruckCount()).isEqualTo(2);
@@ -56,7 +60,7 @@ class TelegramArgumentsServiceTest {
                 "type", "Мебель"
         );
 
-        SavingType savingType = telegramArgumentsService.saveDataType(parameters);
+        SavingType savingType = savingTypeMapper.mapToEntity(parameters);
 
         assertThat(savingType.getTitle()).isEqualTo("Шкаф");
         assertThat(savingType.getWidth()).isEqualTo(3);

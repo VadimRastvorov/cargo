@@ -10,7 +10,7 @@ import java.util.Map;
 @Slf4j
 @RequiredArgsConstructor
 @Service
-public class CommandCargoService implements CommandService {
+public class CommandCargoServiceImpl implements CommandService {
     private final static String DEFAULT_TEXT_RETURN = "команда была переписана, логика еще не реализованна";
 
     @Override

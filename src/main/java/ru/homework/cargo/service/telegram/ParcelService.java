@@ -1,11 +1,10 @@
-package ru.homework.cargo.service;
+package ru.homework.cargo.service.telegram;
 
 import io.micrometer.common.util.StringUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.jpa.ParcelType;
-import ru.homework.cargo.exception.CustomException;
 import ru.homework.cargo.repository.ParcelTypeRepository;
 
 import java.util.Arrays;
@@ -19,19 +18,13 @@ public class ParcelService {
     private final static String SPLIT_SYMBOL = ",";
     private final ParcelTypeRepository parcelTypeRepository;
 
-    public List<String> getParcelList(String parcel) {
+    public List<String> findParcels(String parcel) {
         return Arrays.stream(parcel.split(SPLIT_SYMBOL))
                 .map(String::trim)
                 .filter(StringUtils::isNotBlank)
-                .map(this::findParcelType)
+                .map(parcelTypeRepository::findByTitleContainsIgnoreCaseOrderByIdAsc)
                 .flatMap(List::stream)
                 .map(ParcelType::getParcel)
                 .collect(Collectors.toList());
-    }
-
-    private List<ParcelType> findParcelType(String parcel) {
-        List<ParcelType> parcelTypeList = parcelTypeRepository.findByTitleContainsIgnoreCaseOrderByIdAsc(parcel);
-        if (parcelTypeList.isEmpty()) throw new CustomException("В БД не найдена посылка: " + parcel);
-        return parcelTypeList;
     }
 }

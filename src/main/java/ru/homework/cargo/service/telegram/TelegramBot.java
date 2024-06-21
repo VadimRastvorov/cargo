@@ -1,7 +1,7 @@
 package ru.homework.cargo.service.telegram;
 
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
@@ -13,19 +13,19 @@ import ru.homework.cargo.exception.CustomException;
 
 @Slf4j
 @Component
-@RequiredArgsConstructor
 public class TelegramBot extends TelegramLongPollingBot {
-    private final TelegramService telegramService;
-    private final BotConfig botConfig;
+    @Autowired
+    TelegramService telegramService;
+    private final String botName;
 
-    @Override
-    public String getBotUsername() {
-        return botConfig.getBotName();
+    public TelegramBot(BotConfig botConfig) {
+        super(botConfig.getToken());
+        botName = botConfig.getBotName();
     }
 
     @Override
-    public String getBotToken() {
-        return botConfig.getToken();
+    public String getBotUsername() {
+        return botName;
     }
 
     @Override

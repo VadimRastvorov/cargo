@@ -10,7 +10,7 @@ import java.util.Map;
 @Slf4j
 @RequiredArgsConstructor
 @Service
-public class CommandStartService implements CommandService {
+public class CommandStartServiceImpl implements CommandService {
     private final static String DEFAULT_TEXT_RETURN = "Привет!" + "\n" + "пример ввода команды: load";
 
     @Override

@@ -13,7 +13,6 @@ import java.util.stream.IntStream;
 @Service
 @RequiredArgsConstructor
 public class BuilderImageService {
-    private final static String TELEGRAM_BOT_FORMAT_SYMBOL = "```";
     private final static String CARCASS_SYMBOL = "+";
     private final static String NEW_LINE_SYMBOL = "\n";
     private final static String EMPTY_SYMBOL = " ";
@@ -21,11 +20,9 @@ public class BuilderImageService {
     public String buildImageString(char[][] truck) {
         log.info("метод printStringFromCharTruck: {}", Arrays.deepToString(truck));
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(TELEGRAM_BOT_FORMAT_SYMBOL);
         appendTopBorder(stringBuilder, truck);
         appendTruckContent(stringBuilder, truck);
         appendBottomBorder(stringBuilder, truck);
-        stringBuilder.append(TELEGRAM_BOT_FORMAT_SYMBOL);
         return stringBuilder.toString();
     }
 

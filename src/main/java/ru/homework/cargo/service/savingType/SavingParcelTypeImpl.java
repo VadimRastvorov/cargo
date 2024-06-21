@@ -6,12 +6,11 @@ import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.telegram.SavingType;
 import ru.homework.cargo.mapper.jpa.ParcelTypeMapper;
 import ru.homework.cargo.repository.ParcelTypeRepository;
-import ru.homework.cargo.service.SavingTypesService;
 
 @Slf4j
 @RequiredArgsConstructor
 @Service
-public class SavingParcelType implements SavingTypesService {
+public class SavingParcelTypeImpl implements SavingTypesService {
     private final ParcelTypeRepository parcelTypeRepository;
     private final ParcelTypeMapper parcelTypeMapper;
 

@@ -1,4 +1,4 @@
-package ru.homework.cargo.service;
+package ru.homework.cargo.service.loadingTruck;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
