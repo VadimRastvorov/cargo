@@ -16,7 +16,6 @@ import ru.homework.cargo.service.loadingTruck.AlgorithmService;
 import ru.homework.cargo.service.telegram.CommandService;
 import ru.homework.cargo.service.telegram.CreatingTruckLoadService;
 import ru.homework.cargo.type.AlgorithmType;
-import ru.homework.cargo.util.Transformer;
 
 import java.util.List;
 import java.util.Map;

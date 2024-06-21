@@ -3,13 +3,10 @@ package ru.homework.cargo.service.telegram;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.telegram.Arguments;
-import ru.homework.cargo.entity.telegram.SavingType;
-import ru.homework.cargo.entity.telegram.TelegramLoadTruck;
 import ru.homework.cargo.type.TelegramCommandType;
 
 import java.util.Arrays;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Slf4j
