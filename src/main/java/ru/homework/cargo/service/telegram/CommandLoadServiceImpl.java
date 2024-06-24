@@ -13,12 +13,7 @@ import ru.homework.cargo.mapper.TruckLoadMapper;
 import ru.homework.cargo.mapper.jpa.CargoReportMapper;
 import ru.homework.cargo.repository.CarcaseTypeRepository;
 import ru.homework.cargo.repository.CargoReportRepository;
-import ru.homework.cargo.service.AlgorithmFactoryService;
-import ru.homework.cargo.service.AlgorithmService;
-import ru.homework.cargo.service.ParcelService;
-import ru.homework.cargo.service.BuilderImageService;
-import ru.homework.cargo.service.JsonConvertService;
-import ru.homework.cargo.service.CommandService;
+import ru.homework.cargo.service.*;
 import ru.homework.cargo.type.AlgorithmType;
 
 import java.util.List;
@@ -46,16 +41,18 @@ public class CommandLoadServiceImpl implements CommandService {
         TelegramLoadTruck telegramLoadTruck = loadTruckFromParameters(parameters);
         List<String> parcels = findParcels(telegramLoadTruck.getParcel());
         List<CarcaseType> carcaseTypes = findCarcaseTypes(telegramLoadTruck.getTruckTitle());
-
-        AlgorithmService algorithmService = algorithmFactory.algorithmLoadTruck(AlgorithmType.get(telegramLoadTruck.getAlgorithmName()));
+        AlgorithmService algorithmService = getAlgorithmService(AlgorithmType.get(telegramLoadTruck.getAlgorithmName()));
         List<char[][]> trucks = algorithmService.invoke(truckLoadMapper.toEntity(telegramLoadTruck, carcaseTypes.get(0), parcels));
-
         String buildImageString = buildImageString(trucks);
         String cargoJson = convertTrucksToJson(trucks);
         CargoReport cargoReport = saveCargoReport(telegramLoadTruck, cargoJson, buildImageString);
         log.info("метод loadTrucksService cargoReportDto: {}", cargoReport);
 
         return formatImageString(buildImageString);
+    }
+
+    private AlgorithmService getAlgorithmService(AlgorithmType algorithmType) {
+        return algorithmFactory.algorithmLoadTruck(algorithmType);
     }
 
     private TelegramLoadTruck loadTruckFromParameters(Map<String, String> parameters) {
