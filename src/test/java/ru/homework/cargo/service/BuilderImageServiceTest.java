@@ -1,7 +1,6 @@
 package ru.homework.cargo.service;
 
 import org.junit.jupiter.api.Test;
-import ru.homework.cargo.service.BuilderImageService;
 import ru.homework.cargo.service.builderImage.BuilderImageServiceImpl;
 
 import java.util.Arrays;

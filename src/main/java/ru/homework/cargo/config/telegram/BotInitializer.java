@@ -17,11 +17,11 @@ public class BotInitializer {
     private final TelegramBot telegramBot;
 
     @EventListener({ContextRefreshedEvent.class})
-    public void init()throws TelegramApiException {
+    public void init() throws TelegramApiException {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
-        try{
+        try {
             telegramBotsApi.registerBot(telegramBot);
-        } catch (TelegramApiException e){
+        } catch (TelegramApiException e) {
             log.info("ошибка в методе init: '{}'", e);
         }
     }
