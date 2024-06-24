@@ -1,4 +1,4 @@
-package ru.homework.cargo.service.savingType;
+package ru.homework.cargo.service;
 
 import ru.homework.cargo.entity.telegram.SavingType;
 

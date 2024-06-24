@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.telegram.SavingType;
 import ru.homework.cargo.mapper.jpa.ParcelTypeMapper;
 import ru.homework.cargo.repository.ParcelTypeRepository;
+import ru.homework.cargo.service.SavingTypesService;
 
 @Slf4j
 @RequiredArgsConstructor

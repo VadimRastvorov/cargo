@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.CargoPosition;
 import ru.homework.cargo.mapper.CargoPositionMapper;
+import ru.homework.cargo.service.CargoPositionService;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
@@ -12,7 +13,7 @@ import java.util.stream.IntStream;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class CargoPositionService {
+public class CargoPositionServiceImpl implements CargoPositionService {
     private final static char INITIALISED_VARIABLE = '\u0000';
     private final static int PARCEL_HEIGHT_DEFAULT = 0;
     private final static int PARCEL_WIDTH_DEFAULT = 0;

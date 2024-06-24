@@ -2,14 +2,13 @@ package ru.homework.cargo.service.loadingTruck;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.service.loadingTruck.algorithm.AlgorithmConsistentImpl;
-import ru.homework.cargo.service.loadingTruck.algorithm.AlgorithmMaximalImpl;
-import ru.homework.cargo.service.loadingTruck.algorithm.AlgorithmUniformImpl;
+import ru.homework.cargo.service.AlgorithmFactoryService;
+import ru.homework.cargo.service.AlgorithmService;
 import ru.homework.cargo.type.AlgorithmType;
 
 @Service
 @RequiredArgsConstructor
-public class AlgorithmFactory {
+public class AlgorithmFactoryServiceImpl implements AlgorithmFactoryService {
     private final AlgorithmUniformImpl algorithmUniformImpl;
     private final AlgorithmMaximalImpl algorithmMaximalImpl;
     private final AlgorithmConsistentImpl algorithmConsistentImpl;

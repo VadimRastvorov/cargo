@@ -1,9 +1,9 @@
 package ru.homework.cargo.service.loadingTruck;
 
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.TruckLoad;
+import ru.homework.cargo.service.TruckService;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,8 +11,7 @@ import java.util.stream.IntStream;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
-public class TruckService {
+public class TruckServiceImpl implements TruckService {
     public List<char[][]> createTrucks(TruckLoad truckLoad) {
         log.info("метод createTrucks: {}", truckLoad);
         return IntStream.range(0, truckLoad.getTruckCount())

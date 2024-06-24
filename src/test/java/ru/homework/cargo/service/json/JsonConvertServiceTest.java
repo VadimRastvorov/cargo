@@ -8,6 +8,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ru.homework.cargo.entity.json.CargoJson;
 import ru.homework.cargo.entity.json.TruckListJson;
+import ru.homework.cargo.service.JsonConvertService;
 
 import java.util.Arrays;
 import java.util.Collections;

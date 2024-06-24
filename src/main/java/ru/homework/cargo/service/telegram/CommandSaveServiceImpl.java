@@ -1,13 +1,13 @@
-package ru.homework.cargo.service.telegram.command;
+package ru.homework.cargo.service.telegram;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.telegram.SavingType;
 import ru.homework.cargo.mapper.SavingTypeMapper;
-import ru.homework.cargo.service.savingType.SavingTypeFactory;
-import ru.homework.cargo.service.savingType.SavingTypesService;
-import ru.homework.cargo.service.telegram.CommandService;
+import ru.homework.cargo.service.SavingTypeFactoryService;
+import ru.homework.cargo.service.SavingTypesService;
+import ru.homework.cargo.service.CommandService;
 import ru.homework.cargo.type.SaveDataType;
 
 import java.util.Map;
@@ -16,7 +16,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 @Service
 public class CommandSaveServiceImpl implements CommandService {
-    private final SavingTypeFactory savingTypeFactory;
+    private final SavingTypeFactoryService savingTypeFactory;
     private final SavingTypeMapper savingTypeMapper;
 
     @Override

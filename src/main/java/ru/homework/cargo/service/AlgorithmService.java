@@ -1,4 +1,4 @@
-package ru.homework.cargo.service.loadingTruck;
+package ru.homework.cargo.service;
 
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.TruckLoad;

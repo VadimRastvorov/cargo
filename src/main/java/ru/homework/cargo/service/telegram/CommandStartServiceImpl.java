@@ -1,9 +1,9 @@
-package ru.homework.cargo.service.telegram.command;
+package ru.homework.cargo.service.telegram;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.service.telegram.CommandService;
+import ru.homework.cargo.service.CommandService;
 
 import java.util.Map;
 

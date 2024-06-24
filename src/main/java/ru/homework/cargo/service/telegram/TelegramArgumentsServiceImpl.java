@@ -3,6 +3,7 @@ package ru.homework.cargo.service.telegram;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.telegram.Arguments;
+import ru.homework.cargo.service.TelegramArgumentsService;
 import ru.homework.cargo.type.TelegramCommandType;
 
 import java.util.Arrays;
@@ -11,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Service
-public class TelegramArgumentsService {
+public class TelegramArgumentsServiceImpl implements TelegramArgumentsService {
     private final static String SPLIT_CHAR = "-";
     private final static char SPACE_CHAR = ' ';
 

@@ -3,13 +3,13 @@ package ru.homework.cargo.service;
 import org.junit.jupiter.api.Test;
 import ru.homework.cargo.entity.CargoPosition;
 import ru.homework.cargo.mapper.CargoPositionMapper;
-import ru.homework.cargo.service.loadingTruck.CargoPositionService;
+import ru.homework.cargo.service.loadingTruck.CargoPositionServiceImpl;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CargoPositionServiceTest {
 
-    CargoPositionService cargoPositionService = new CargoPositionService(new CargoPositionMapper());
+    CargoPositionService cargoPositionService = new CargoPositionServiceImpl(new CargoPositionMapper());
 
     @Test
     void shouldFindStartPositionInTruck() {

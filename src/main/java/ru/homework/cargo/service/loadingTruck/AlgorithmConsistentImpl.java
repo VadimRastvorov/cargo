@@ -1,14 +1,14 @@
-package ru.homework.cargo.service.loadingTruck.algorithm;
+package ru.homework.cargo.service.loadingTruck;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.CargoPosition;
 import ru.homework.cargo.entity.TruckLoad;
-import ru.homework.cargo.service.loadingTruck.AlgorithmService;
-import ru.homework.cargo.service.loadingTruck.CargoPositionService;
-import ru.homework.cargo.service.loadingTruck.LoadingParcelToTruckService;
-import ru.homework.cargo.service.loadingTruck.TruckService;
+import ru.homework.cargo.service.AlgorithmService;
+import ru.homework.cargo.service.CargoPositionService;
+import ru.homework.cargo.service.LoadingParcelToTruckService;
+import ru.homework.cargo.service.TruckService;
 import ru.homework.cargo.util.Transformer;
 
 import java.util.List;

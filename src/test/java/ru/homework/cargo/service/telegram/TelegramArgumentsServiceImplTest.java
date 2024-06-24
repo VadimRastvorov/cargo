@@ -2,19 +2,20 @@ package ru.homework.cargo.service.telegram;
 
 import org.junit.jupiter.api.Test;
 import ru.homework.cargo.entity.telegram.Arguments;
-import ru.homework.cargo.entity.telegram.TelegramLoadTruck;
 import ru.homework.cargo.entity.telegram.SavingType;
+import ru.homework.cargo.entity.telegram.TelegramLoadTruck;
 import ru.homework.cargo.mapper.SavingTypeMapper;
 import ru.homework.cargo.mapper.TelegramLoadTruckMapper;
+import ru.homework.cargo.service.TelegramArgumentsService;
 import ru.homework.cargo.type.TelegramCommandType;
 
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class TelegramArgumentsServiceTest {
+class TelegramArgumentsServiceImplTest {
 
-    TelegramArgumentsService telegramArgumentsService = new TelegramArgumentsService();
+    TelegramArgumentsService telegramArgumentsService = new TelegramArgumentsServiceImpl();
     TelegramLoadTruckMapper telegramLoadTruckMapper = new TelegramLoadTruckMapper();
     SavingTypeMapper savingTypeMapper = new SavingTypeMapper();
 

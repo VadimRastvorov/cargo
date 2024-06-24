@@ -1,6 +1,8 @@
 package ru.homework.cargo.service;
 
 import org.junit.jupiter.api.Test;
+import ru.homework.cargo.service.BuilderImageService;
+import ru.homework.cargo.service.builderImage.BuilderImageServiceImpl;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class BuilderImageServiceTest {
 
-    private final BuilderImageService builderImageService = new BuilderImageService();
+    private final BuilderImageService builderImageService = new BuilderImageServiceImpl();
 
     @Test
     void shouldBuildImageString() {
