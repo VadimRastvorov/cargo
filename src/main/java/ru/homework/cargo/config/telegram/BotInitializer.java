@@ -22,7 +22,7 @@ public class BotInitializer {
         try {
             telegramBotsApi.registerBot(telegramBot);
         } catch (TelegramApiException e) {
-            log.info("ошибка в методе init: '{}'", e);
+            log.info("ошибка в методе init: '{}'", e.getMessage());
         }
     }
 }
