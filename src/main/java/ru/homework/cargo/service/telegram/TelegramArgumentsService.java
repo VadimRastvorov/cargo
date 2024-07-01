@@ -1,4 +1,4 @@
-package ru.homework.cargo.service;
+package ru.homework.cargo.service.telegram;
 
 import ru.homework.cargo.entity.telegram.Arguments;
 

@@ -22,7 +22,7 @@ class BuilderImageServiceTest {
 
         String truckString = builderImageService.buildImageString(truck);
 
-        String expectedTruckString = "```\r\n+    +\r\n+ijkl+\r\n+efgh+\r\n+abcd+\r\n++++++```";
+        String expectedTruckString = "\r\n+    +\r\n+ijkl+\r\n+efgh+\r\n+abcd+\r\n++++++";
         assertThat(truckString).isEqualTo(expectedTruckString);
     }
 
@@ -42,7 +42,7 @@ class BuilderImageServiceTest {
 
         String trucksString = builderImageService.buildImageString(trucks);
 
-        String expectedTrucksString = "```\r\n+  +\r\n+ab+\r\n+cd+\r\n++++```\n```\r\n+   +\r\n+123+\r\n+456+\r\n+789+\r\n+++++```";
+        String expectedTrucksString = "\r\n+  +\r\n+ab+\r\n+cd+\r\n++++\n\r\n+   +\r\n+123+\r\n+456+\r\n+789+\r\n+++++";
         assertThat(trucksString).isEqualTo(expectedTrucksString);
     }
 }

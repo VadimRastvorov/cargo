@@ -6,7 +6,7 @@ import ru.homework.cargo.entity.telegram.SavingType;
 import ru.homework.cargo.entity.telegram.TelegramLoadTruck;
 import ru.homework.cargo.mapper.SavingTypeMapper;
 import ru.homework.cargo.mapper.TelegramLoadTruckMapper;
-import ru.homework.cargo.service.TelegramArgumentsService;
+import ru.homework.cargo.service.telegram.impl.TelegramArgumentsServiceImpl;
 import ru.homework.cargo.type.TelegramCommandType;
 
 import java.util.Map;
