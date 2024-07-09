@@ -8,7 +8,8 @@ import java.util.Map;
 
 @Builder
 @Getter
+//todo почему final?
 public class Arguments {
     private final TelegramCommandType telegramCommandType;
-    private final Map<String, String> parameters;
+    private final Map<String, String> parameters; //todo можно сделать отдельным объектом с нормальными названиями
 }

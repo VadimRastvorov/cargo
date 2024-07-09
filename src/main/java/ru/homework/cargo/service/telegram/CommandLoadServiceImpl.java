@@ -50,11 +50,11 @@ public class CommandLoadServiceImpl implements CommandService {
 
         return formatImageString(buildImageString);
     }
-
+    //todo зачем выносить одну строчку?
     private AlgorithmService getAlgorithmService(AlgorithmType algorithmType) {
         return algorithmFactory.algorithmLoadTruck(algorithmType);
     }
-
+    //todo зачем выносить одну строчку?
     private TelegramLoadTruck loadTruckFromParameters(Map<String, String> parameters) {
         return telegramLoadTruckMapper.mapToLoadTruck(parameters);
     }
@@ -78,11 +78,11 @@ public class CommandLoadServiceImpl implements CommandService {
     private String buildImageString(List<char[][]> trucks) {
         return builderImageService.buildImageString(trucks);
     }
-
+    //todo зачем выносить одну строчку?
     private String convertTrucksToJson(List<char[][]> trucks) {
         return jsonConvertService.truckListJsonToJsonString(trucksToTrucksJson.trucksToTrucksJson(trucks));
     }
-
+    //todo зачем выносить одну строчку?
     private CargoReport saveCargoReport(TelegramLoadTruck telegramLoadTruck, String cargoJson, String buildImageString) {
         return cargoReportRepository.save(cargoReportMapper.loadTruckToEntity(telegramLoadTruck, cargoJson, buildImageString));
     }

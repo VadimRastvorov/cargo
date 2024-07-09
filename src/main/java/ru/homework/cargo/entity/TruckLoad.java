@@ -7,6 +7,7 @@ import java.util.List;
 
 @Builder
 @Getter
+//todo почему final?
 public class TruckLoad {
     private final int height;
     private final int width;

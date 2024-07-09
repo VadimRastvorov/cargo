@@ -5,6 +5,7 @@ import lombok.Getter;
 
 @Builder
 @Getter
+//todo почему final?
 public class SavingType {
     private final String code;
     private final String title;

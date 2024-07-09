@@ -5,6 +5,7 @@ import lombok.Getter;
 
 @Getter
 @Builder
+//todo почему final?
 public class ParcelTypeDto {
     private final String title;
     private final String code;

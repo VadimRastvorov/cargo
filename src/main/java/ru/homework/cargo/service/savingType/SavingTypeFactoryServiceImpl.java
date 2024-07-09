@@ -11,7 +11,10 @@ import ru.homework.cargo.type.SaveDataType;
 @Service
 @RequiredArgsConstructor
 public class SavingTypeFactoryServiceImpl implements SavingTypeFactoryService {
+
+    //todo private final?
     SavingParcelTypeImpl savingParcelTypeImpl;
+    //todo private final?
     SavingCarcaseTypeImpl savingCarcaseTypeImpl;
 
     @Override

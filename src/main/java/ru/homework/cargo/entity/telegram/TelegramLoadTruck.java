@@ -5,6 +5,7 @@ import lombok.Getter;
 
 @Builder
 @Getter
+//todo почему final?
 public class TelegramLoadTruck {
     private final String truckTitle;
     private final int truckCount;

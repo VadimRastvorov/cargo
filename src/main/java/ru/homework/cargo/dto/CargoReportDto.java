@@ -5,6 +5,7 @@ import lombok.Getter;
 
 @Getter
 @Builder
+//todo почему final?
 public class CargoReportDto {
     private final String cargoJson;
     private final String cargo;

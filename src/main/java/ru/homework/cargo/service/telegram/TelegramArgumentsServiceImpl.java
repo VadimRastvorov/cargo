@@ -22,7 +22,7 @@ public class TelegramArgumentsServiceImpl implements TelegramArgumentsService {
         String command = args[0].toLowerCase().trim();
         Map<String, String> parameters =
                 Arrays.stream(args)
-                        .skip(1)
+                        .skip(1) //todo магическое число - вынести
                         .collect(Collectors
                                 .toMap(s -> s.substring(0, s.indexOf(SPACE_CHAR)).trim(),
                                         s -> s.substring(s.indexOf(SPACE_CHAR)).trim()));
