@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 @Builder
 public class ParcelTypeDto {
-    private final String title;
-    private final String code;
-    private final String parcel;
+    private String title;
+    private String code;
+    private String parcel;
 }

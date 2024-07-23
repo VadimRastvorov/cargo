@@ -5,7 +5,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import ru.homework.cargo.dto.CarcaseTypeDto;
 import ru.homework.cargo.entity.jpa.CarcaseType;
-import ru.homework.cargo.entity.telegram.SavingType;
+import ru.homework.cargo.entity.telegram.Parameters;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface CarcaseTypeMapper {
@@ -15,6 +15,6 @@ public interface CarcaseTypeMapper {
     CarcaseTypeDto toDto(CarcaseType source);
 
     @Mapping(target = "createdDate", expression = "java(java.time.LocalDateTime.now())")
-    CarcaseType fromSaveDataTypeToEntity(SavingType source);
+    CarcaseType fromSaveDataTypeToEntity(Parameters source);
 
 }

@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.entity.telegram.Arguments;
-import ru.homework.cargo.service.CommandFactoryService;
+import ru.homework.cargo.service.CommandFactory;
 import ru.homework.cargo.service.CommandService;
 
 @Slf4j
@@ -12,11 +12,11 @@ import ru.homework.cargo.service.CommandService;
 @RequiredArgsConstructor
 public class TelegramService {
     private final TelegramArgumentsService telegramArgumentsService;
-    private final CommandFactoryService commandFactoryService;
+    private final CommandFactory commandFactory;
 
     public String telegramPrint(String messageText) {
         Arguments arguments = telegramArgumentsService.createTelegramArguments(messageText);
-        CommandService commandService = commandFactoryService.invokeCommand(arguments.getTelegramCommandType());
+        CommandService commandService = commandFactory.invokeCommand(arguments.getTelegramCommandType());
         return commandService.invoke(arguments.getParameters());
     }
 }

@@ -6,8 +6,8 @@ import lombok.Getter;
 @Getter
 @Builder
 public class CarcaseTypeDto {
-    private final String title;
-    private final String code;
-    private final long width;
-    private final long height;
+    private String title;
+    private String code;
+    private long width;
+    private long height;
 }

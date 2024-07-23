@@ -10,9 +10,9 @@ import ru.homework.cargo.type.SaveDataType;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class SavingTypeFactoryServiceImpl implements SavingTypeFactoryService {
-    SavingParcelTypeImpl savingParcelTypeImpl;
-    SavingCarcaseTypeImpl savingCarcaseTypeImpl;
+public class SavingTypeFactoryImpl implements SavingTypeFactoryService {
+    private final SavingParcelTypeImpl savingParcelTypeImpl;
+    private final SavingCarcaseTypeImpl savingCarcaseTypeImpl;
 
     @Override
     public SavingTypesService saveTypeData(SaveDataType savingType) {

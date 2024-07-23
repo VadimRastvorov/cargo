@@ -21,7 +21,7 @@ public class BuilderImageTelegramDecorator extends BuilderImageDecorator {
         return wrap(builderImageService.buildImageString(trucks));
     }
 
-    private String wrap(String string){
+    private String wrap(String string) {
         return TELEGRAM_BOT_FORMAT_SYMBOL.concat(string.concat(TELEGRAM_BOT_FORMAT_SYMBOL));
     }
 }

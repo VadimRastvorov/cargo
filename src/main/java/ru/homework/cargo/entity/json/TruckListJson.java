@@ -10,5 +10,5 @@ import java.util.List;
 @Getter
 @EqualsAndHashCode
 public class TruckListJson {
-    private final List<CargoJson> truckList;
+    private List<CargoJson> truckList;
 }

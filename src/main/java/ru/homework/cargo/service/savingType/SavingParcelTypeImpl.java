@@ -3,7 +3,7 @@ package ru.homework.cargo.service.savingType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.homework.cargo.entity.telegram.SavingType;
+import ru.homework.cargo.entity.telegram.Parameters;
 import ru.homework.cargo.mapper.jpa.ParcelTypeMapper;
 import ru.homework.cargo.repository.ParcelTypeRepository;
 import ru.homework.cargo.service.SavingTypesService;
@@ -16,7 +16,7 @@ public class SavingParcelTypeImpl implements SavingTypesService {
     private final ParcelTypeMapper parcelTypeMapper;
 
     @Override
-    public String save(SavingType savingType) {
+    public String save(Parameters savingType) {
         return parcelTypeRepository.save(parcelTypeMapper.fromSaveDataTypeToEntity(savingType)).toString();
     }
 }

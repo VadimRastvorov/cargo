@@ -10,5 +10,5 @@ import java.util.List;
 @Getter
 @EqualsAndHashCode
 public class CargoJson {
-    private final List<String> cargo;
+    private List<String> cargo;
 }

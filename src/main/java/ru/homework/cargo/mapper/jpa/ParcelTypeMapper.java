@@ -5,7 +5,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import ru.homework.cargo.dto.ParcelTypeDto;
 import ru.homework.cargo.entity.jpa.ParcelType;
-import ru.homework.cargo.entity.telegram.SavingType;
+import ru.homework.cargo.entity.telegram.Parameters;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface ParcelTypeMapper {
@@ -15,5 +15,5 @@ public interface ParcelTypeMapper {
     ParcelTypeDto toDto(ParcelType source);
 
     @Mapping(target = "createdDate", expression = "java(java.time.LocalDateTime.now())")
-    ParcelType fromSaveDataTypeToEntity(SavingType source);
+    ParcelType fromSaveDataTypeToEntity(Parameters source);
 }

@@ -39,7 +39,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             } catch (CustomException ex) {
                 sendMessage(chatId, ex.getMessage());
             } catch (Exception ex) {
-                log.info("TelegramApiException In Method onUpdateReceived: '{}'", ex.toString());
+                log.info("TelegramApiException In Method onUpdateReceived: '{}'", ex);
             }
         }
     }
@@ -52,7 +52,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                     .parseMode(ParseMode.MARKDOWN)
                     .build());
         } catch (TelegramApiException ex) {
-            log.info("TelegramApiException In Method sendMessage: '{}'", ex.toString());
+            log.info("TelegramApiException In Method sendMessage: '{}'", ex);
         }
     }
 }

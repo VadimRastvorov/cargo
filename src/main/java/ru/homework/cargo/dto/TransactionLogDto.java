@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 @Builder
 public class TransactionLogDto {
-    private final String response;
-    private final String request;
-    private final String source;
+    private String response;
+    private String request;
+    private String source;
 }

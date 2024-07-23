@@ -8,8 +8,8 @@ import java.util.List;
 @Builder
 @Getter
 public class TruckLoad {
-    private final int height;
-    private final int width;
-    private final int truckCount;
-    private final List<String> parcels;
+    private int height;
+    private int width;
+    private int truckCount;
+    private List<String> parcels;
 }

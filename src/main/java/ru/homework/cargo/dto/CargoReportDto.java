@@ -6,10 +6,10 @@ import lombok.Getter;
 @Getter
 @Builder
 public class CargoReportDto {
-    private final String cargoJson;
-    private final String cargo;
-    private final String truck;
-    private final String parcels;
-    private final long truckCount;
-    private final String algorithm;
+    private String cargoJson;
+    private String cargo;
+    private String truck;
+    private String parcels;
+    private long truckCount;
+    private String algorithm;
 }

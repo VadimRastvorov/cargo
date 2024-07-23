@@ -6,9 +6,9 @@ import lombok.Getter;
 @Getter
 @Builder
 public class CargoPosition {
-    private final int height;
-    private final int width;
-    private final boolean fullTruck;
-    private final char[][] parcel;
+    private int height;
+    private int width;
+    private boolean fullTruck;
+    private char[][] parcel;
 }
 

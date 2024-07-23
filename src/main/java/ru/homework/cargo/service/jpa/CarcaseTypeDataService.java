@@ -3,9 +3,9 @@ package ru.homework.cargo.service.jpa;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.homework.cargo.dto.CarcaseTypeDto;
+import ru.homework.cargo.entity.jpa.CarcaseType;
 import ru.homework.cargo.mapper.jpa.CarcaseTypeMapper;
 import ru.homework.cargo.repository.CarcaseTypeRepository;
-import ru.homework.cargo.entity.jpa.CarcaseType;
 
 import java.util.List;
 
